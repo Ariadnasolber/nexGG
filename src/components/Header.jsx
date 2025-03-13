@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LolButton from "./LolButton";
 
 const Header = () => {
     const [videoEnded, setVideoEnded] = useState(false); // Estado para controlar si terminó el video
