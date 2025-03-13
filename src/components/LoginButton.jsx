@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginButton = () => {
     return (
-        <button className="m-0 rounded bg-[#282A2F] text-white text-sm font-thin focus:outline-none hover:bg-gray-950 h-7 w-fit cursor-pointer ring-1 ring-gray-700 flex items-center justify-start gap-1 px-3">
+        <button className="m-0 rounded-full bg-[#0F0F12] text-white text-sm font-thin focus:outline-none hover:bg-gray-950 h-7 w-fit cursor-pointer ring-1 ring-gray-800 flex items-center justify-start gap-1 px-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                 <path fill="#ddd" fill-opacity="0.25" d="M3 12a9 9 0 1 1 18 0a9 9 0 0 1-18 0" />
                 <circle cx="12" cy="10" r="4" fill="#ddd" />

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Header />} />
           {/* Otras rutas pueden ir aquí */}
         </Routes>
+        <Footer />
       </Router>
     </>
   );
