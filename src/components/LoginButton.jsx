@@ -8,7 +8,7 @@ const LoginButton = () => {
                 <circle cx="12" cy="10" r="4" fill="#ddd" />
                 <path fill="#ddd" fill-rule="evenodd" d="M18.22 18.246c.06.097.041.22-.04.297A8.97 8.97 0 0 1 12 21a8.97 8.97 0 0 1-6.18-2.457a.24.24 0 0 1-.04-.297C6.942 16.318 9.291 15 12 15s5.057 1.318 6.22 3.246" clip-rule="evenodd" />
             </svg>
-            <span className="pr-2">Iniciar sesión</span>
+            <span className="pr-2">Login</span>
         </button>
     );
 };

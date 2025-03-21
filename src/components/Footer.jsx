@@ -10,14 +10,8 @@ const Footer = () => {
                     <div className="flex items-center space-x-2">
                         <span className="text-red-500 text-3xl font-bold"></span>
 
-                        <h2 className="text-2xl font-bold text-white">Nex.gg</h2>
+                        <img className="h-5" src="/NEXGGLOGO.png" alt="" />
                     </div>
-
-                    <button className="flex items-center px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
-
-                    </button>
-
-
 
                     <p className="text-gray-500 text-xs">Hecho con mucho amor en Barcelona</p>
                 </div>
@@ -48,8 +42,6 @@ const Footer = () => {
                         <ul className="space-y-1">
                             <li><a href="#" className="hover:text-white">League of Legends</a></li>
                             <li><a href="#" className="hover:text-white">VALORANT</a></li>
-                            <li><a href="#" className="hover:text-white">Apex Legends</a></li>
-
                         </ul>
                     </div>
                 </div>
