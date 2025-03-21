@@ -4,9 +4,15 @@ import LoginButton from "./LoginButton";
 import LenguageButton from "./LenguageButton";
 import LolButton from "./LolButton";
 import ValoButton from "./ValoButton";
+import { useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/');
+    };
     return (
         <nav className="bg-[#0F1015]/80 text-gray-300 px-0 flex justify-between items-center flex-col fixed top-0 left-0 w-full z-50 shadow-lg">
             <div className="flex items-center justify-between h-12 w-full pl-8 py-2">
