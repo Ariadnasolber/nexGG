@@ -19,34 +19,61 @@ router.post("/check-email", async (req, res) => {
 
 // Register user
 router.post("/register", async (req, res) => {
-    const { email, password, username, role } = req.body;
+    const { email, password, username } = req.body;
 
-    const { data, error } = await supabase.auth.signUp({
-        email,
-        password,
-    });
-
-    if (error) return res.status(400).json({ error: error.message });
-
-    const user_id = data.user.id;
-    const user_role = 'user';
-
-    const { error: profileError } = await supabase.from("profiles").insert([
-        {
-            user_id,
-            email,
-            username,
-            role: user_role,
-        },
-    ]);
-
-    if (profileError) {
-        console.error("Error insertando en profiles:", profileError);
-        return res.status(500).json({ error: profileError.message });
+    // 1. Validación de campos requeridos
+    if (!email || !password || !username) {
+        return res.status(400).json({ error: "Email, password, and username are required" });
     }
 
-    res.json({ user: data.user });
+    try {
+        // 2. Registro en Supabase Auth
+        const { data, error: authError } = await supabase.auth.signUp({
+            email,
+            password,
+        });
+
+        if (authError) {
+            console.error("Error en auth:", authError);
+            return res.status(400).json({ error: authError.message });
+        }
+
+        // 3. Verificar si el usuario se creó correctamente
+        if (!data?.user) {
+            return res.status(400).json({ 
+                error: "User created but requires email verification. Profile will be created after verification." 
+            });
+        }
+
+        // 4. Crear perfil en la tabla 'profiles'
+        const { error: profileError } = await supabase
+            .from("profiles")
+            .insert({
+                user_id: data.user.id, // UUID del usuario
+                email: email,
+                username: username,
+                role: 'user', // Rol por defecto
+                created_at: new Date().toISOString() // Campo opcional
+            });
+
+        if (profileError) {
+            console.error("Error insertando en profiles:", profileError);
+            await supabase.auth.admin.deleteUser(data.user.id);
+            return res.status(500).json({ error: profileError.message });
+        }
+
+        // 5. Respuesta exitosa
+        res.json({ 
+            user: data.user,
+            message: "User registered and profile created successfully" 
+        });
+
+    } catch (err) {
+        console.error("Error inesperado:", err);
+        res.status(500).json({ error: "Internal server error" });
+    }
 });
+
 
 // Login user
 router.post("/login", async (req, res) => {
