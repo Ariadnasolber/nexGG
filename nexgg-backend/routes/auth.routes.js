@@ -19,7 +19,7 @@ router.post("/check-email", async (req, res) => {
 
 // Register user
 router.post("/register", async (req, res) => {
-    const { email, password, username } = req.body;
+    const { email, password, username, role } = req.body;
 
     const { data, error } = await supabase.auth.signUp({
         email,
@@ -29,17 +29,21 @@ router.post("/register", async (req, res) => {
     if (error) return res.status(400).json({ error: error.message });
 
     const user_id = data.user.id;
+    const user_role = 'user';
 
     const { error: profileError } = await supabase.from("profiles").insert([
         {
             user_id,
             email,
             username,
+            role: user_role,
         },
     ]);
 
-    if (profileError)
+    if (profileError) {
+        console.error("Error insertando en profiles:", profileError);
         return res.status(500).json({ error: profileError.message });
+    }
 
     res.json({ user: data.user });
 });
