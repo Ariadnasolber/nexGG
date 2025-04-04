@@ -1,172 +1,162 @@
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { getChampions } from "../services/api";
 import { Search, ChevronDown } from "lucide-react";
-import { champions } from "../lib/champions";
 
-// Componente principal de la página de campeones
 export default function CampeonesPage() {
-    return (
-        <div className="min-h-screen bg-[#0D1117] text-white">
-            <div className="max-w-[1200px] mx-auto px-4 py-6">
-                <h1 className="text-2xl font-bold mb-2">LoL Champions</h1>
-                <p className="text-gray-400 mb-6">
-                    View all League of Legends champions, their stats, and performance data.
-                </p>
+  const [champions, setChampions] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedRole, setSelectedRole] = useState("All");
+  const [selectedDifficulty, setSelectedDifficulty] = useState("All");
+  const [loading, setLoading] = useState(true);
 
-                <SearchBar />
-                <FilterBar />
-                <ChampionGrid />
-            </div>
-        </div>
-    );
+  useEffect(() => {
+    getChampions()
+      .then((data) => {
+        setChampions(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error al obtener campeones:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p className="text-center mt-8">Cargando campeones...</p>;
+
+  return (
+    <div className="p-4 max-w-screen-xl mx-auto">
+      <h1 className="text-3xl font-bold mb-2">LoL Champions</h1>
+      <p className="text-gray-600 mb-6">
+        View all League of Legends champions, their stats, and performance data.
+      </p>
+
+      <SearchBar query={searchQuery} setQuery={setSearchQuery} />
+      <FilterBar
+        selectedRole={selectedRole}
+        setSelectedRole={setSelectedRole}
+        selectedDifficulty={selectedDifficulty}
+        setSelectedDifficulty={setSelectedDifficulty}
+      />
+      <ChampionGrid
+        champions={champions}
+        query={searchQuery}
+        role={selectedRole}
+        difficulty={selectedDifficulty}
+      />
+    </div>
+  );
 }
 
-// Componente de barra de búsqueda
-function SearchBar() {
-    const [query, setQuery] = useState("");
-
-    return (
-        <div className="relative w-full max-w-md mb-6">
-            <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none">
-                <Search size={16} />
-            </div>
-            <input
-                type="text"
-                className="w-full pl-10 pr-4 py-2 bg-[#0D1117] border border-gray-600 rounded text-sm text-white focus:outline-none focus:border-[#FF4655] focus:ring-2 focus:ring-[#FF4655]/30"
-                placeholder="Search Champions..."
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-            />
-        </div>
-    );
+// ------------------------ Search Bar ------------------------
+function SearchBar({ query, setQuery }) {
+  return (
+    <div className="flex items-center border rounded mb-4 px-3 py-2 shadow-sm max-w-md">
+      <Search size={16} className="text-gray-500 mr-2" />
+      <input
+        type="text"
+        className="w-full outline-none"
+        placeholder="Search Champions..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </div>
+  );
 }
 
-// Componente de filtros
-function FilterBar() {
-    const [selectedRole, setSelectedRole] = useState("All");
-    const [selectedDifficulty, setSelectedDifficulty] = useState("All");
+// ------------------------ Filter Bar ------------------------
+function FilterBar({ selectedRole, setSelectedRole, selectedDifficulty, setSelectedDifficulty }) {
+  const roles = ["All", "Top", "Jungle", "Mid", "Bot", "Support"];
+  const difficulties = ["All", "Easy", "Moderate", "Hard"];
 
-    const roles = ["All", "Top", "Jungle", "Mid", "Bot", "Support"];
-    const difficulties = ["All", "Easy", "Moderate", "Hard"];
-
-    const Dropdown = ({ label, options, selected, setSelected }) => (
-        <div className="relative">
-            <button className="flex items-center gap-2 bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded">
-                <span>{label}: {selected}</span>
-                <ChevronDown size={16} />
-            </button>
-            <div className="absolute left-0 mt-1 w-40 bg-gray-800 rounded shadow-lg z-10 hidden group-hover:block hover:block">
-                {options.map((opt) => (
-                    <button
-                        key={opt}
-                        onClick={() => setSelected(opt)}
-                        className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-700"
-                    >
-                        {opt}
-                    </button>
-                ))}
-            </div>
-        </div>
-    );
-
-    return (
-        <div className="flex flex-wrap gap-4 mb-6 group">
-            <Dropdown
-                label="Role"
-                options={roles}
-                selected={selectedRole}
-                setSelected={setSelectedRole}
-            />
-            <Dropdown
-                label="Difficulty"
-                options={difficulties}
-                selected={selectedDifficulty}
-                setSelected={setSelectedDifficulty}
-            />
-        </div>
-    );
+  return (
+    <div className="flex flex-wrap gap-4 mb-6">
+      <Dropdown label="Role" selected={selectedRole} options={roles} onSelect={setSelectedRole} />
+      <Dropdown label="Difficulty" selected={selectedDifficulty} options={difficulties} onSelect={setSelectedDifficulty} />
+    </div>
+  );
 }
 
-// Componente de tarjeta de campeón
+function Dropdown({ label, selected, options, onSelect }) {
+  return (
+    <div className="relative group">
+      <button className="flex items-center border rounded px-3 py-1 shadow-sm bg-white">
+        <span className="mr-1">{label}: {selected}</span>
+        <ChevronDown size={16} />
+      </button>
+      <div className="absolute z-10 hidden group-hover:block bg-white border rounded shadow-md mt-1 w-full">
+        {options.map(option => (
+          <button
+            key={option}
+            className="w-full text-left px-4 py-2 hover:bg-gray-100"
+            onClick={() => onSelect(option)}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ------------------------ Champion Card ------------------------
 function ChampionCard({ champion }) {
-    const difficultyClass = {
-        Easy: "text-green-400",
-        Moderate: "text-yellow-400",
-        Hard: "text-red-400",
-    };
+  const difficultyColor = {
+    Easy: "text-green-600",
+    Moderate: "text-yellow-500",
+    Hard: "text-red-600",
+  };
 
-    const roleClass = {
-        Top: "bg-blue-500",
-        Jungle: "bg-green-500",
-        Mid: "bg-purple-500",
-        Bot: "bg-red-500",
-        Support: "bg-yellow-400",
-    };
-
-    return (
-        <div className="bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <div className="relative h-40 w-full overflow-hidden">
-                <img
-                    src={champion.splash || `/placeholder.svg?height=160&width=300`}
-                    alt={champion.name}
-                    className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-3">
-                    <h3 className="text-lg font-bold">{champion.name}</h3>
-                    <p className="text-sm text-gray-300">{champion.title}</p>
-                </div>
-                <div className="absolute top-2 right-2 flex gap-1">
-                    {champion.roles.map((role) => (
-                        <span
-                            key={role}
-                            className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${roleClass[role]}`}
-                            title={role}
-                        >
-                            {role.charAt(0)}
-                        </span>
-                    ))}
-                </div>
-            </div>
-            <div className="p-3">
-                <div className="flex justify-between mb-2 text-xs">
-                    <div>
-                        <span className="text-gray-400">Difficulty: </span>
-                        <span className={`${difficultyClass[champion.difficulty]} font-medium`}>
-                            {champion.difficulty}
-                        </span>
-                    </div>
-                    <div>
-                        <span className="text-gray-400">Win Rate: </span>
-                        <span className="text-white font-medium">{champion.winRate}%</span>
-                    </div>
-                </div>
-                <div className="flex justify-between text-xs">
-                    <div>
-                        <span className="text-gray-400">Pick Rate: </span>
-                        <span className="text-white font-medium">{champion.pickRate}%</span>
-                    </div>
-                    <div>
-                        <span className="text-gray-400">Ban Rate: </span>
-                        <span className="text-white font-medium">{champion.banRate}%</span>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="border rounded shadow hover:shadow-lg transition overflow-hidden bg-white">
+      <div className="relative">
+        <img
+          src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`}
+          alt={champion.name}
+          className="w-full h-40 object-cover"
+        />
+        <div className="absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent p-2 w-full">
+          <h3 className="text-white text-lg font-bold">{champion.name}</h3>
+          <p className="text-white text-sm">{champion.title}</p>
         </div>
-    );
+      </div>
+      <div className="p-3 text-sm">
+        <div className="flex justify-between mb-1">
+          <span className="font-medium">Difficulty:</span>
+          <span className={difficultyColor[champion.difficulty]}>
+            {champion.difficulty}
+          </span>
+        </div>
+        <div className="flex justify-between">
+          <span>Win Rate:</span>
+          <span>{champion.winRate}%</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Pick Rate:</span>
+          <span>{champion.pickRate}%</span>
+        </div>
+        <div className="flex justify-between">
+          <span>Ban Rate:</span>
+          <span>{champion.banRate}%</span>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-// Componente de grid de campeones
-function ChampionGrid() {
-    const [searchQuery, setSearchQuery] = useState("");
+// ------------------------ Champion Grid ------------------------
+function ChampionGrid({ champions, query, role, difficulty }) {
+  const filtered = champions.filter((champion) => {
+    const matchesQuery = champion.name.toLowerCase().includes(query.toLowerCase());
+    const matchesRole = role === "All" || champion.roles?.includes(role);
+    const matchesDifficulty = difficulty === "All" || champion.difficulty === difficulty;
+    return matchesQuery && matchesRole && matchesDifficulty;
+  });
 
-    const filteredChampions = champions; // puedes aplicar el filtrado si quieres
-
-    return (
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-4 sm:grid-cols-[repeat(auto-fill,minmax(160px,1fr))] xs:grid-cols-[repeat(auto-fill,minmax(140px,1fr))]">
-            {filteredChampions.map((champion) => (
-                <ChampionCard key={champion.id} champion={champion} />
-            ))}
-        </div>
-    );
+  return (
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
+      {filtered.map((champion) => (
+        <ChampionCard key={champion.id} champion={champion} />
+      ))}
+    </div>
+  );
 }
