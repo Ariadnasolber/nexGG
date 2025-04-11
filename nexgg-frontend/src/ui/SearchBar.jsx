@@ -9,7 +9,7 @@ export default function SearchBar({ placeholder = "Search...", onChange, value }
             </div>
             <input
                 type="text"
-                className="w-full pl-10 pr-4 py-2 bg-[#0D1117] border border-gray-800 rounded text-sm text-white focus:outline-none focus:border-[#FF4655] focus:ring-2 focus:ring-[#FF4655]/30"
+                className="w-full pl-10 pr-4 py-2 bg-[#0D1117] border border-gray-800 rounded text-sm text-white focus:outline-none focus:border-[#ff7146] focus:ring-2 focus:ring-[#ff7146]/30"
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
@@ -17,3 +17,4 @@ export default function SearchBar({ placeholder = "Search...", onChange, value }
         </div>
     );
 }
+

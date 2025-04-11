@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Search, ChevronDown, Info } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 import { champions } from "../lib/champions";
+import SearchBar from "../ui/SearchBar";
+
 
 export default function TierListPage() {
     const [selectedRole, setSelectedRole] = useState("All");
@@ -45,31 +47,26 @@ export default function TierListPage() {
 
     return (
         <div className="min-h-screen bg-[#0D1117] text-white">
-            <div className="max-w-[1200px] mx-auto px-4 py-6">
-                <h1 className="text-2xl font-bold mb-2">LoL Tier List</h1>
-                <p className="text-gray-400 mb-6">
+            <div
+                className="relative h-200 bg-cover bg-no-repeat bg-[center_22%] flex items-center justify-center flex-col text-center"
+                style={{ backgroundImage: `url('/high-noon-yone.jpg')` }}
+            >
+                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="relative z-10 flex items-center justify-center flex-col">
+                <h1 className="text-4xl font-bold text-white px-4 py-2">LoL Tier List</h1>
+                <p className="text-white mb-6">
                     Champion tier list based on win rate, pick rate, and ban rate data.
                 </p>
-
+                </div>
+                <SearchBar />
                 {/* Filtros */}
                 <div className="flex flex-wrap gap-4 mb-6">
                     <Dropdown label="Role" options={roles} selected={selectedRole} setSelected={setSelectedRole} />
                     <Dropdown label="Region" options={regions} selected={selectedRegion} setSelected={setSelectedRegion} />
                     <Dropdown label="Rank" options={ranks} selected={selectedRank} setSelected={setSelectedRank} />
                 </div>
-
-                {/* Barra de búsqueda */}
-                <div className="relative w-full max-w-md mb-6">
-                    <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none">
-                        <Search size={16} />
-                    </div>
-                    <input
-                        type="text"
-                        placeholder="Search Champions..."
-                        className="w-full pl-10 pr-4 py-2 bg-[#0D1117] border border-gray-600 rounded text-sm text-white focus:outline-none focus:border-[#FF4655] focus:ring-2 focus:ring-[#FF4655]/30"
-                    />
-                </div>
-
+            </div>
+            <div className="max-w-[1200px] mx-auto px-4 py-6">
                 {/* Leyenda */}
                 <div className="flex items-center gap-2 mb-6 text-gray-400 text-sm">
                     <Info size={16} />

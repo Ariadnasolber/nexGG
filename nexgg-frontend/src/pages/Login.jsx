@@ -66,7 +66,7 @@ export default function Login() {
                         <input
                             type="email"
                             placeholder="Email"
-                            className="w-full p-3 text-white placeholder-gray-500 w-[402.24px] h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
+                            className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -83,7 +83,7 @@ export default function Login() {
                             <input
                                 type="text"
                                 placeholder="Nombre de usuario"
-                                className="w-full p-3 text-white placeholder-gray-500 w-[402.24px] h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
+                                className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
                                 value={username}
                                 onChange={(e) => setUsername(e.target.value)}
                                 required
@@ -96,7 +96,7 @@ export default function Login() {
                             <input
                                 type="password"
                                 placeholder="Contraseña"
-                                className="w-full p-3 text-white placeholder-gray-500 w-[402.24px] h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
+                                className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
