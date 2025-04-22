@@ -3,7 +3,7 @@ import { FaTwitter, FaDiscord, FaTwitch, FaYoutube, FaWindows } from "react-icon
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0e0e10] text-gray-300 py-12 px-6 md:px-16">
+        <footer className="bg-[#0F0F12] text-gray-300 py-12 px-6 md:px-16">
             <div className="max-w-7xl mx-auto flex flex-col items-center text-center lg:text-left lg:flex-row lg:justify-between">
                 {/* Logo y Botón de Descarga */}
                 <div className="flex flex-col items-center lg:items-start space-y-4">
@@ -13,7 +13,7 @@ const Footer = () => {
                         <img className="h-5" src="/NEXGGLOGO.png" alt="" />
                     </div>
 
-                    <p className="text-gray-500 text-xs">Hecho con mucho amor en Barcelona</p>
+                    <p className="text-gray-500 text-xs">Hecho por Ariel y Ariadna</p>
                 </div>
 
                 {/* Sección central (Links) */}

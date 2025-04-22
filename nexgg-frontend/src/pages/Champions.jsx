@@ -25,7 +25,7 @@ export default function CampeonesPage() {
     });
 
     return (
-        <div className="min-h-screen bg-[#0D1117] text-white">
+        <div className="min-h-screen bg-[#0F0F12] text-white">
             {/* Cabecera con imagen de fondo */}
             <div
                 className="relative h-200 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"

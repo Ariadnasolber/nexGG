@@ -27,16 +27,16 @@ export default function TierListPage() {
 
     const Dropdown = ({ label, options, selected, setSelected }) => (
         <div className="relative group">
-            <button className="flex items-center gap-2 bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded">
+            <button className="flex items-center gap-2 bg-[#0D1117] border border-gray-800 hover:bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded cursor-pointer">
                 <span>{label}: {selected}</span>
                 <ChevronDown size={16} />
             </button>
-            <div className="absolute left-0 mt-1 w-40 bg-gray-800 rounded shadow-lg z-10 hidden group-hover:block hover:block">
+            <div className="absolute left-0 mt-1 w-40 bg-[#0D1117] rounded shadow-lg z-10 hidden group-hover:block hover:block">
                 {options.map((opt) => (
                     <button
                         key={opt}
                         onClick={() => setSelected(opt)}
-                        className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-700"
+                        className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-800 cursor-pointer"
                     >
                         {opt}
                     </button>
@@ -51,14 +51,13 @@ export default function TierListPage() {
                 className="relative h-200 bg-cover bg-no-repeat bg-[center_22%] flex items-center justify-center flex-col text-center"
                 style={{ backgroundImage: `url('/high-noon-yone.jpg')` }}
             >
-                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 flex items-center justify-center flex-col">
                 <h1 className="text-4xl font-bold text-white px-4 py-2">LoL Tier List</h1>
                 <p className="text-white mb-6">
                     Champion tier list based on win rate, pick rate, and ban rate data.
                 </p>
                 </div>
-                <SearchBar />
                 {/* Filtros */}
                 <div className="flex flex-wrap gap-4 mb-6">
                     <Dropdown label="Role" options={roles} selected={selectedRole} setSelected={setSelectedRole} />
@@ -83,7 +82,7 @@ export default function TierListPage() {
                             >
                                 {tier.name}
                             </div>
-                            <div className="flex flex-wrap bg-gray-800 flex-grow p-2 gap-2">
+                            <div className="flex flex-wrap bg-[#282A2F] flex-grow p-2 gap-2">
                                 {tier.champions.map((champion) => (
                                     <div
                                         key={champion.id}
