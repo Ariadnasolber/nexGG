@@ -33,7 +33,7 @@ export default function CampeonesPage() {
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10 flex items-center justify-center flex-col">
-                    <h1 className="text-4xl font-bold text-white px-4 py-2">Champions</h1>
+                    <h1 className="text-4xl font-bold text-white px-4 py-2 uppercase tracking-wide">Champions</h1>
                     <p className="text-white mb-6">
                         View all League of Legends champions, their stats, and performance data.
                     </p>

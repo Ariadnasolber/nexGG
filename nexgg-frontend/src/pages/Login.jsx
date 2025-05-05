@@ -57,7 +57,7 @@ export default function Login() {
     return (
         <div className="flex items-center justify-start h-screen bg-cover bg-center overflow-hidden" style={{ backgroundImage: "url('/talon-bg.jpg')" }}>
             <div className="bg-[#0F1015]/60 px-30 shadow-xl w-160 h-screen pt-70 mt-[104px] rounded-tr-lg">
-                <h2 className="text-2xl font-semibold mb-6 text-center text-gray-300">
+                <h2 className="text-2xl font-semibold mb-6 text-center text-gray-300 uppercase tracking-wide">
                     {step === 1 ? "Login" : emailExists ? "Login" : "Register"}
                 </h2>
 
@@ -66,7 +66,7 @@ export default function Login() {
                         <input
                             type="email"
                             placeholder="Email"
-                            className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
+                            className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#0F0F12] rounded-lg border-[0.40px] border-[#363636] focus:outline-none focus:ring-1 focus:ring-zinc-600"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -83,7 +83,7 @@ export default function Login() {
                             <input
                                 type="text"
                                 placeholder="Nombre de usuario"
-                                className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
+                                className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#0F0F12] rounded-lg border-[0.40px] border-[#363636]"
                                 value={username}
                                 onChange={(e) => setUsername(e.target.value)}
                                 required
@@ -96,7 +96,7 @@ export default function Login() {
                             <input
                                 type="password"
                                 placeholder="Contraseña"
-                                className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#16171b] rounded-sm border-[0.40px] border-[#363636]"
+                                className="w-full p-3 text-white placeholder-gray-500 h-[50.08px] bg-[#0F0F12] rounded-lg border-[0.40px] border-[#363636]"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
@@ -106,7 +106,7 @@ export default function Login() {
 
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white p-3 rounded-md font-medium hover:bg-blue-700 transition duration-200"
+                        className="w-full bg-[#50111c] text-white p-3 rounded-md font-medium transition duration-200 cursor-pointer hover:scale-[1.02] hover:bg-[#50111bd1] hover:shadow-lg"
                     >
                         {step === 1 ? "Siguiente" : emailExists ? "Login" : "Register"}
                     </button>

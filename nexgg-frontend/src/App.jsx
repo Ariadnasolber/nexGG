@@ -8,6 +8,7 @@ import Champions from './pages/Champions';
 import Tierlist from './pages/Tierlist';
 import Builds from './pages/Builds';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ChampProfile from './pages/ChampProfile';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/campeones" element={<Champions />} />
           <Route path="/tierlist" element={<Tierlist />} />
           <Route path="/overlay" element={<Builds />} />
+          <Route path="/champprofile" element={<ChampProfile />} />
         </Routes>
         <Footer />
       </Router>

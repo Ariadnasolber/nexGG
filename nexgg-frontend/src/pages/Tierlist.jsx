@@ -53,7 +53,7 @@ export default function TierListPage() {
             >
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 flex items-center justify-center flex-col">
-                <h1 className="text-4xl font-bold text-white px-4 py-2">LoL Tier List</h1>
+                <h1 className="text-4xl font-bold text-white px-4 py-2 uppercase tracking-wide">LoL Tier List</h1>
                 <p className="text-white mb-6">
                     Champion tier list based on win rate, pick rate, and ban rate data.
                 </p>
