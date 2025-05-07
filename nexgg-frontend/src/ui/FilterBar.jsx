@@ -11,11 +11,11 @@ export default function FilterBar() {
 
     const Dropdown = ({ label, options, selected, setSelected }) => (
         <div className="relative group">
-            <button className="flex items-center gap-2 bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded">
+            <button className="flex items-center gap-2 bg-zinc-800 text-white text-sm font-medium px-4 py-2 rounded">
                 <span>{label}: {selected}</span>
                 <ChevronDown size={16} />
             </button>
-            <div className="absolute left-0 mt-1 w-40 bg-gray-800 rounded shadow-lg z-10 hidden group-hover:block hover:block">
+            <div className="absolute left-0 mt-1 w-40 bg-zinc-800 rounded shadow-lg z-10 hidden group-hover:block hover:block">
                 {options.map((opt) => (
                     <button
                         key={opt}
