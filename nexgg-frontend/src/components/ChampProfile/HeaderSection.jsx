@@ -52,4 +52,3 @@ const Stat = ({ label, value }) => (
 );
 
 export default HeaderSection;
-page
