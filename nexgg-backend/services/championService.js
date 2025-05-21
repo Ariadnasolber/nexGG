@@ -1,10 +1,12 @@
-const axios = require('axios');
+// services/championService.js
+const { supabase } = require('../supabaseClient');
 
 const fetchChampions = async () => {
-  const response = await axios.get(
-    'https://ddragon.leagueoflegends.com/cdn/14.7.1/data/en_US/champion.json'
-  );
-  return Object.values(response.data.data); // Devuelve un array de campeones
+  const { data, error } = await supabase
+    .from('champions')
+    .select('*');
+  if (error) throw error;
+  return data; // Devuelve un array de campeones con abilities, stats y metadatos
 };
 
 module.exports = { fetchChampions };

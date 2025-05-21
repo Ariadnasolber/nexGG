@@ -1,3 +1,4 @@
+// server.js
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -5,7 +6,10 @@ const { supabase } = require("./supabaseClient");
 
 // Importar rutas
 const authRoutes = require("./routes/auth.routes");
-const championRoutes = require("./routes/champions"); // ← NUEVO: importamos las rutas de campeones
+const championRoutes = require("./routes/champions");
+const profileRouter = require("./routes/profileRouter");
+const runesRouter = require("./routes/runes");
+const spellsRouter = require("./routes/spells");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -21,7 +25,7 @@ app.use(
 // Middleware para parsear JSON
 app.use(express.json());
 
-// Ruta base
+// Ruta raíz
 app.get("/", (req, res) => {
     res.send("API de NexGG funcionando 🎯 prueba /test-connection");
 });
@@ -33,11 +37,14 @@ app.get("/test-connection", async (req, res) => {
     res.json({ data });
 });
 
-// Rutas de auth/login/register
+// Rutas de autenticación (login, register, etc.)
 app.use("/api", authRoutes);
 
-// Rutas de campeones
-app.use("/api/champions", championRoutes); // ← NUEVO: activamos la ruta de campeones
+// Rutas de la API
+app.use("/api/champions", championRoutes);
+app.use("/api/profiles", profileRouter);
+app.use("/api/runes", runesRouter);
+app.use("/api/summoner_spells", spellsRouter);
 
 // Iniciar servidor
 app.listen(PORT, () => {

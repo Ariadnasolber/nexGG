@@ -1,7 +1,12 @@
-const express = require('express');
+// routes/champions.js
+const express = require("express");
 const router = express.Router();
-const { getChampions } = require('../controllers/championController');
+const {
+    getChampions,
+    getChampionById,
+} = require("../controllers/championController");
 
-router.get('/', getChampions);  // La ruta para obtener todos los campeones
+router.get("/", getChampions);
+router.get("/:id", getChampionById);
 
 module.exports = router;
