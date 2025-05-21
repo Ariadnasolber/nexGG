@@ -73,7 +73,7 @@ const items = {
     {
       id: 1,
       name: "Luden's Echo",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/items/ludens.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2l0ZW1zL2x1ZGVucy5wbmciLCJpYXQiOjE3NDcyNDYwMzMsImV4cCI6MTc3ODc4MjAzM30.TMo5I1-XtmW4G9xDZ_4r8MxN64JyibxGnmSfj8sWS-c",
       description: "Grants ability power and magic penetration",
     },
     {
@@ -123,7 +123,7 @@ const items = {
     {
       id: 9,
       name: "Void Staff",
-      image: "/placeholder.svg?height=40&width=40",
+      image: "https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/items/223135.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2l0ZW1zLzIyMzEzNS5wbmciLCJpYXQiOjE3NDcyNDU4NTQsImV4cCI6MTc3ODc4MTg1NH0.1ba4l6QIMCCpKT6_I1IMpeKvR8UKBY66OYD82RNAYRs",
       description: "Grants magic penetration",
     },
     { id: 10, name: "Bloodthirster", image: "https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/items/sanguinaria.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2l0ZW1zL3Nhbmd1aW5hcmlhLnBuZyIsImlhdCI6MTc0NjgwOTM4NSwiZXhwIjoxNzc4MzQ1Mzg1fQ.MCd6B6jsro30Gv6pegA0lZkoCshTsd3NH3Njw5bhzL8", description: "Grants lifesteal" },
@@ -530,14 +530,9 @@ export default function Builds() {
         <div className="max-w-[1200px] mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Gamepad2 className="h-6 w-6 text-[#FF4655]" />
-            <span className="text-xl font-bold">LoL Builds</span>
+            
           </div>
-          <div className="flex items-center gap-4">
-            <button className="px-4 py-2 bg-[#1F2731] border border-[#2F3741] hover:bg-[#2F3741] rounded-md text-white">
-              Sign In
-            </button>
-            <button className="px-4 py-2 bg-[#FF4655] hover:bg-[#FF5E6D] rounded-md text-white">Download App</button>
-          </div>
+      
         </div>
       </header>
 

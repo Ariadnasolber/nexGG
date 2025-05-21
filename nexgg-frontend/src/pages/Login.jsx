@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // 👈 Añadido
 import { api } from "../services/api"; // Axios configurado
 
 export default function Login() {
@@ -9,6 +10,8 @@ export default function Login() {
     const [emailExists, setEmailExists] = useState(null);
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
+
+    const navigate = useNavigate(); // 👈 Inicializa navegación
 
     // 🔁 Si el email se borra, volvemos al paso 1
     useEffect(() => {
@@ -37,16 +40,26 @@ export default function Login() {
             if (emailExists) {
                 try {
                     const res = await api.post("/login", { email, password });
-                    setMessage("Login exitoso");
-                    console.log(res.data);
+
+                    // ✅ Guardar datos en localStorage
+                    localStorage.setItem("userId", res.data.user.id);
+                    localStorage.setItem("username", res.data.user.username);
+
+                    // ✅ Redirigir al perfil
+                    navigate("/perfil");
                 } catch (err) {
                     setError("Email o contraseña incorrectos");
                 }
             } else {
                 try {
                     const res = await api.post("/register", { email, password, username });
-                    setMessage("Registro exitoso. Revisa tu correo.");
-                    console.log(res.data);
+
+                    // ✅ Guardar datos en localStorage tras registro
+                    localStorage.setItem("userId", res.data.user.id);
+                    localStorage.setItem("username", res.data.user.username);
+
+                    // ✅ Redirigir al perfil
+                    navigate("/perfil");
                 } catch (err) {
                     setError("No se pudo registrar el usuario.");
                 }

@@ -1,38 +1,68 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
-import { champions } from "../lib/champions";
+import { ChevronDown, Filter } from 'lucide-react';
 
-export default function FilterBar() {
-    const [selectedRole, setSelectedRole] = useState("All");
-    const [selectedDifficulty, setSelectedDifficulty] = useState("All");
+const cn = (...classes) => classes.filter(Boolean).join(" ");
 
-    const roles = ["All", "Top", "Jungle", "Mid", "Bot", "Support"];
-    const difficulties = ["All", "Easy", "Moderate", "Hard"];
+export default function FilterBar({ 
+  selectedRole, 
+  setSelectedRole, 
+  selectedDifficulty, 
+  setSelectedDifficulty 
+}) {
+  const roles = ["All", "Top", "Jungle", "Mid", "Bot", "Support"];
+  const difficulties = ["All", "Easy", "Moderate", "Hard"];
 
-    const Dropdown = ({ label, options, selected, setSelected }) => (
-        <div className="relative group">
-            <button className="flex items-center gap-2 bg-zinc-800 text-white text-sm font-medium px-4 py-2 rounded">
-                <span>{label}: {selected}</span>
-                <ChevronDown size={16} />
+  return (
+    <div className="flex flex-wrap gap-4 mb-6">
+      <FilterDropdown
+        label="Role"
+        options={roles}
+        selected={selectedRole}
+        setSelected={setSelectedRole}
+      />
+      <FilterDropdown
+        label="Difficulty"
+        options={difficulties}
+        selected={selectedDifficulty}
+        setSelected={setSelectedDifficulty}
+      />
+    </div>
+  );
+}
+
+export function FilterDropdown({ label, options, selected, setSelected }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-2 px-4 py-2 bg-zinc-800 text-white border border-gray-800 rounded-md hover:bg-gray-700 text-sm font-medium"
+      >
+        <Filter size={14} />
+        <span>{label}: {selected}</span>
+        <ChevronDown size={14} />
+      </button>
+
+      {isOpen && (
+        <div className="absolute mt-1 w-40 bg-zinc-800 border border-gray-800 rounded-md shadow-lg z-10">
+          {options.map((opt) => (
+            <button
+              key={opt}
+              onClick={() => {
+                setSelected(opt);
+                setIsOpen(false);
+              }}
+              className={cn(
+                "block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-700",
+                selected === opt && "bg-gray-700 font-medium"
+              )}
+            >
+              {opt}
             </button>
-            <div className="absolute left-0 mt-1 w-40 bg-zinc-800 rounded shadow-lg z-10 hidden group-hover:block hover:block">
-                {options.map((opt) => (
-                    <button
-                        key={opt}
-                        onClick={() => setSelected(opt)}
-                        className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-700"
-                    >
-                        {opt}
-                    </button>
-                ))}
-            </div>
+          ))}
         </div>
-    );
-
-    return (
-        <div className="flex flex-wrap gap-4 mb-6 group">
-            <Dropdown label="Role" options={roles} selected={selectedRole} setSelected={setSelectedRole} />
-            <Dropdown label="Difficulty" options={difficulties} selected={selectedDifficulty} setSelected={setSelectedDifficulty} />
-        </div>
-    );
+      )}
+    </div>
+  );
 }
