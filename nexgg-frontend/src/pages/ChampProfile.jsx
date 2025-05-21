@@ -11,7 +11,7 @@ import AbilitiesTab from "../components/ChampProfile/AbilitiesTab";
 import FilterBar from "../ui/FilterBar";
 
 // Datos simulados de campeón
-import championData from "../data/ChampionData"; // Si lo separas, si no, pega el objeto aquí directamente
+import championData from "../data/ChampionData";
 
 const ChampProfile = () => {
     const { championId } = useParams();

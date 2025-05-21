@@ -1,0 +1,490 @@
+[
+  {
+    "id": 8112,
+    "name": "Electrocute",
+    "description": "Hitting a champion with 3 separate attacks or abilities in 3s deals bonus adaptive damage.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/Electrocute/Electrocute.png",
+    "style": "Domination",
+    "keystone": true
+  },
+  {
+    "id": 8128,
+    "name": "Dark Harvest",
+    "description": "Damaging a low health champion inflicts adaptive damage and harvests a soul from the victim.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png",
+    "style": "Domination",
+    "keystone": true
+  },
+  {
+    "id": 9923,
+    "name": "Hail of Blades",
+    "description": "Gain a large amount of Attack Speed for the first 3 attacks made against enemy champions.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png",
+    "style": "Domination",
+    "keystone": true
+  },
+  {
+    "id": 8126,
+    "name": "Cheap Shot",
+    "description": "Deal bonus true damage to enemy champions with impaired movement or actions. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/CheapShot/CheapShot.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8139,
+    "name": "Taste of Blood",
+    "description": "Heal when you damage an enemy champion.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/TasteOfBlood/GreenTerror_TasteOfBlood.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8143,
+    "name": "Sudden Impact",
+    "description": "Damaging basic attacks and abilities deal bonus true damage to enemy champions after using a dash, leap, blink, teleport, or when leaving stealth.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8137,
+    "name": "Sixth Sense",
+    "description": "On a long Cooldown, automatically sense a nearby untracked and unseen ward, tracking it for the team. Level 11: Also reveal the ward for 10s.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/SixthSense/SixthSense.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8140,
+    "name": "Grisly Mementos",
+    "description": "Collect 1 memento on champion takedowns, up to 18 total.Gain 6 Trinket Haste for each collected.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/GrislyMementos/GrislyMementos.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8141,
+    "name": "Deep Ward",
+    "description": "Your wards in the enemy jungle are Deep, gaining Health and Duration.Level 9: Wards in the river are also Deep.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/DeepWard/DeepWard.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8135,
+    "name": "Treasure Hunter",
+    "description": "Unique takedowns grant additional gold the first time they are collected. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/TreasureHunter/TreasureHunter.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8105,
+    "name": "Relentless Hunter",
+    "description": "Unique takedowns grant permanent out of combat MS. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/RelentlessHunter/RelentlessHunter.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8106,
+    "name": "Ultimate Hunter",
+    "description": "Unique takedowns grant permanent cooldown reduction on your Ultimate. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Domination/UltimateHunter/UltimateHunter.png",
+    "style": "Domination",
+    "keystone": false
+  },
+  {
+    "id": 8351,
+    "name": "Glacial Augment",
+    "description": "Immobilizing an enemy champion will cause 3 glacial rays that slow nearby enemies and reduce their damage to your allies.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png",
+    "style": "Inspiration",
+    "keystone": true
+  },
+  {
+    "id": 8360,
+    "name": "Unsealed Spellbook",
+    "description": "Swap Summoner Spells while out of combat. Swapping to unique Summoner Spells will increase the rate at which you can make future swaps.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/UnsealedSpellbook/UnsealedSpellbook.png",
+    "style": "Inspiration",
+    "keystone": true
+  },
+  {
+    "id": 8369,
+    "name": "First Strike",
+    "description": "When you initiate champion combat, deal 7% extra damage for 3 seconds and gain gold based on damage dealt.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+    "style": "Inspiration",
+    "keystone": true
+  },
+  {
+    "id": 8306,
+    "name": "Hextech Flashtraption",
+    "description": "While Flash is on cooldown it is replaced by Hexflash.Hexflash: Channel, then blink to a new location.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/HextechFlashtraption/HextechFlashtraption.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8304,
+    "name": "Magical Footwear",
+    "description": "You get free boots at 12 min but you cannot buy boots before then. Each takedown you get makes your boots come 45s sooner.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/MagicalFootwear/MagicalFootwear.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8321,
+    "name": "Cash Back",
+    "description": "Get some gold back when you purchase Legendary Items.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/CashBack/CashBack2.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8313,
+    "name": "Triple Tonic",
+    "description": "Upon reaching level 3, gain an Elixir of Avarice.Upon reaching level 6, gain an Elixir of Force.Upon reaching level 9, gain an Elixir of Skill. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/PerfectTiming/AlchemistCabinet.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8352,
+    "name": "Time Warp Tonic",
+    "description": "Potions grant some restoration immediately.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/TimeWarpTonic/TimeWarpTonic.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8345,
+    "name": "Biscuit Delivery",
+    "description": "Gain a free Biscuit every 2 min, until 6 min. Consuming or selling a Biscuit permanently increases your max health and restores health.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/BiscuitDelivery/BiscuitDelivery.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8347,
+    "name": "Cosmic Insight",
+    "description": "+18 Summoner Spell Haste+10 Item Haste",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/CosmicInsight/CosmicInsight.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8410,
+    "name": "Approach Velocity",
+    "description": "Bonus MS towards nearby enemy champions that are movement impaired, increased for enemy champions that you impair.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/ApproachVelocity/ApproachVelocity.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8316,
+    "name": "Jack Of All Trades",
+    "description": "For each different stat gained from items, gain one Jack stack. Each stack grants you 1 Ability Haste.Gain bonus Adaptive Force at 5 and 10 stacks.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Inspiration/JackOfAllTrades/JackofAllTrades2.png",
+    "style": "Inspiration",
+    "keystone": false
+  },
+  {
+    "id": 8005,
+    "name": "Press the Attack",
+    "description": "Hitting an enemy champion 3 consecutive times deals bonus damage and amplifies your damage until you leave combat with champions.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "style": "Precision",
+    "keystone": true
+  },
+  {
+    "id": 8008,
+    "name": "Lethal Tempo",
+    "description": "Attacking an enemy champion grants you Attack Speed, up to 6 stacks. At max stacks, deal bonus adaptive damage On-Attack.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "style": "Precision",
+    "keystone": true
+  },
+  {
+    "id": 8021,
+    "name": "Fleet Footwork",
+    "description": "Attacking and moving builds Energy stacks. At 100 stacks, your next attack heals you and grants increased MS.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png",
+    "style": "Precision",
+    "keystone": true
+  },
+  {
+    "id": 8010,
+    "name": "Conqueror",
+    "description": "Gain stacks of adaptive force when attacking enemy champions. After reaching 12 stacks, heal for a portion of damage you deal to champions.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+    "style": "Precision",
+    "keystone": true
+  },
+  {
+    "id": 9101,
+    "name": "Absorb Life",
+    "description": "Killing a target heals you.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/AbsorbLife/AbsorbLife.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 9111,
+    "name": "Triumph",
+    "description": "Takedowns restore 5% of your missing health and grant an additional 20 gold. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/Triumph.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 8009,
+    "name": "Presence of Mind",
+    "description": "Restore a small amount of mana or energy when damaging an enemy champion. Takedowns restore mana or energy.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/PresenceOfMind/PresenceOfMind.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 9104,
+    "name": "Legend: Alacrity",
+    "description": "Takedowns on enemies grant permanent Attack Speed. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 9105,
+    "name": "Legend: Haste",
+    "description": "Takedowns on enemies grant permanent Basic Ability Haste. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/LegendHaste/LegendHaste.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 9103,
+    "name": "Legend: Bloodline",
+    "description": "Takedowns on enemies grant permanent Life Steal, up to a cap. Once the cap is reached, increase your max health. Weaker earlier but stronger later game than other Legend Runes.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 8014,
+    "name": "Coup de Grace",
+    "description": "Deal more damage to low health enemy champions.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 8017,
+    "name": "Cut Down",
+    "description": "Deal more damage to high health enemy champions.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Precision/CutDown/CutDown.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 8299,
+    "name": "Last Stand",
+    "description": "Deal more damage to champions while you are low on health.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/LastStand/LastStand.png",
+    "style": "Precision",
+    "keystone": false
+  },
+  {
+    "id": 8437,
+    "name": "Grasp of the Undying",
+    "description": "Every 4s your next attack on a champion deals bonus magic damage, heals you, and permanently increases your health.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png",
+    "style": "Resolve",
+    "keystone": true
+  },
+  {
+    "id": 8439,
+    "name": "Aftershock",
+    "description": "After immobilizing an enemy champion gain defenses and later deal a burst of magic damage around you.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/VeteranAftershock/VeteranAftershock.png",
+    "style": "Resolve",
+    "keystone": true
+  },
+  {
+    "id": 8465,
+    "name": "Guardian",
+    "description": "Guard allies you cast spells on and those that are very nearby. If you or a guarded ally would take damage based on level, you're both granted a shield.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/Guardian/Guardian.png",
+    "style": "Resolve",
+    "keystone": true
+  },
+  {
+    "id": 8446,
+    "name": "Demolish",
+    "description": "Charge up a powerful attack against a tower while near it.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/Demolish/Demolish.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8463,
+    "name": "Font of Life",
+    "description": "Impairing the movement of an enemy champion heals nearby allied champions. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/FontOfLife/FontOfLife.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8401,
+    "name": "Shield Bash",
+    "description": "Whenever you gain a shield, your next basic attack against a champion deals bonus adaptive damage.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/MirrorShell/MirrorShell.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8429,
+    "name": "Conditioning",
+    "description": "After 12 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 3%.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/Conditioning/Conditioning.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8444,
+    "name": "Second Wind",
+    "description": "After taking damage from an enemy champion heal back some missing health over time. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/SecondWind/SecondWind.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8473,
+    "name": "Bone Plating",
+    "description": "After taking damage from an enemy champion, the next 3 spells or attacks you receive from them deal 30-60 (based on level) less damage.Duration: 1.5sCooldown: 55s",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/BonePlating/BonePlating.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8451,
+    "name": "Overgrowth",
+    "description": "Gain permanent max health when minions or monsters die near you.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/Overgrowth/Overgrowth.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8453,
+    "name": "Revitalize",
+    "description": "Gain 5% Heal and Shield Power.Heals and shields you cast or receive are 10% stronger on targets below 40% health.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Resolve/Revitalize/Revitalize.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8242,
+    "name": "Unflinching",
+    "description": "Gain Armor and Magic Resist when receiving crowd control.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/Unflinching/Unflinching.png",
+    "style": "Resolve",
+    "keystone": false
+  },
+  {
+    "id": 8214,
+    "name": "Summon Aery",
+    "description": "Your attacks and abilities send Aery to a target, damaging enemies or shielding allies.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/SummonAery/SummonAery.png",
+    "style": "Sorcery",
+    "keystone": true
+  },
+  {
+    "id": 8229,
+    "name": "Arcane Comet",
+    "description": "Damaging a champion with an ability hurls a damaging comet at their location.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+    "style": "Sorcery",
+    "keystone": true
+  },
+  {
+    "id": 8230,
+    "name": "Phase Rush",
+    "description": "Hitting an enemy champion with 3 separate attacks or abilities grants a burst of MS and Slow Resist. ",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/PhaseRush/PhaseRush.png",
+    "style": "Sorcery",
+    "keystone": true
+  },
+  {
+    "id": 8224,
+    "name": "Axiom Arcanist",
+    "description": "Your Ultimate has increased damage, healing, and shielding. Scoring a takedown on an enemy champion reduces your Ultimate's current cooldown.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/NullifyingOrb/Axiom_Arcanist.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8226,
+    "name": "Manaflow Band",
+    "description": "Hitting an enemy champion with an ability permanently increases your maximum mana by 25, up to 250 mana.After reaching 250 bonus mana, restore 1% of your missing mana every 5 seconds.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/ManaflowBand/ManaflowBand.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8275,
+    "name": "Nimbus Cloak",
+    "description": "After casting a Summoner Spell, gain a short Move Speed increase that allows you to pass through units.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/NimbusCloak/6361.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8210,
+    "name": "Transcendence",
+    "description": "Gain bonuses upon reaching the following levels:Level 5: +5 Ability Haste Level 8: +5 Ability Haste Level 11: On Champion takedown, reduce the remaining cooldown of basic abilities by 20%.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/Transcendence/Transcendence.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8234,
+    "name": "Celerity",
+    "description": "All Move Speed bonuses are 7% more effective on you and gain 1% Move Speed.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/Celerity/CelerityTemp.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8233,
+    "name": "Absolute Focus",
+    "description": "While above 70% health, gain extra adaptive damage.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/AbsoluteFocus/AbsoluteFocus.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8237,
+    "name": "Scorch",
+    "description": "Your first damaging ability hit every 10s burns champions.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/Scorch/Scorch.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8232,
+    "name": "Waterwalking",
+    "description": "Gain MS and AP or AD, adaptive in the river.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/Waterwalking/Waterwalking.png",
+    "style": "Sorcery",
+    "keystone": false
+  },
+  {
+    "id": 8236,
+    "name": "Gathering Storm",
+    "description": "Gain increasing amounts of AD or AP, adaptive over the course of the game.",
+    "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/perk/perk-images/Styles/Sorcery/GatheringStorm/GatheringStorm.png",
+    "style": "Sorcery",
+    "keystone": false
+  }
+]

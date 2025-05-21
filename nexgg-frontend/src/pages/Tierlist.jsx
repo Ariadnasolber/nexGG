@@ -18,7 +18,6 @@ const champions = [
   {
     id: 1,
     name: "Ahri",
-    roles: ["Mid"],
     winRate: 51.2,
     pickRate: 8.5,
     banRate: 3.2,
