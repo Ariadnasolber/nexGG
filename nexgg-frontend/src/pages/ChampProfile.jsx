@@ -8,7 +8,6 @@ import BuildTab from "../components/ChampProfile/BuildTab";
 import AramTab from "../components/ChampProfile/AramTab";
 import SynergiesTab from "../components/ChampProfile/SynergiesTab";
 import AbilitiesTab from "../components/ChampProfile/AbilitiesTab";
-import FilterBar from "../ui/FilterBar";
 
 // Datos simulados de campeón
 import championData from "../data/ChampionData";
@@ -46,7 +45,6 @@ const ChampProfile = () => {
         <div className="w-full max-w-[1300px] mx-auto text-[#e4e4e4] bg-[#0F0F12]">
             <HeaderSection champion={champion} />
             <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
-            <FilterBar />
 
             <div className="bg-[#1c1c21] rounded-lg p-5">
                 {activeTab === "build" && <BuildTab build={champion.builds.standard} />}

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { getChampions } from "../services/api";
-import  SearchBar  from "../ui/SearchBar";
-import  FilterBar  from "../ui/FilterBar";
-import  ChampionGrid  from "../ui/ChampionGrid";
+import SearchBar from "../ui/SearchBar";
+import FilterBar from "../ui/FilterBar";
+import ChampionGrid from "../ui/ChampionGrid";
 
 
 export default function CampeonesPage() {
@@ -29,12 +29,14 @@ export default function CampeonesPage() {
             {/* Cabecera con imagen de fondo */}
             <div
                 className="relative h-200 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"
-                style={{ backgroundImage: `url('/bg-missfortune.jpeg')` }}
+                style={{ backgroundImage: `url('https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/MissFortune/bg-missfortune.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9NaXNzRm9ydHVuZS9iZy1taXNzZm9ydHVuZS5qcGVnIiwiaWF0IjoxNzQ3ODQyNTM2LCJleHAiOjE3NzkzNzg1MzZ9.ZrLCYHMrmZ5lHTS5-6cune0XhTJoCINZt5sDrYG3Adk')` }}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="relative z-10 flex items-center justify-center flex-col">
-                    <h1 className="text-4xl font-bold text-white px-4 py-2 uppercase tracking-wide">Champions</h1>
-                    <p className="text-white mb-6">
+                <div className="relative z-10 px-4 py-2 flex justify-center items-center flex-col">
+                    <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
+                        Champions
+                    </h1>
+                    <p className="text-lg max-w-2xl mx-auto mb-8">
                         View all League of Legends champions, their stats, and performance data.
                     </p>
                     <SearchBar query={query} setQuery={setQuery} />

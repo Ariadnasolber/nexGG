@@ -272,15 +272,15 @@ export default function Tierlist() {
     <div className="min-h-screen bg-[#0D1117] text-white">
       {/* Hero */}
       <div
-        className="relative h-[300px] bg-cover bg-no-repeat bg-[center_22%] flex items-center justify-center flex-col text-center"
-        style={{ backgroundImage: "url('/high-noon-yone.jpg')" }}
+        className="relative h-200 bg-cover bg-no-repeat bg-[center_22%] flex items-center justify-center flex-col text-center"
+        style={{ backgroundImage: "url('https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/Yone/high-noon-yone.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9Zb25lL2hpZ2gtbm9vbi15b25lLmpwZyIsImlhdCI6MTc0Nzg0MjcwMSwiZXhwIjoxNzc5Mzc4NzAxfQ.JpYgA7ywnF5a0sr-0lZ1rOQDAya_8zPFtn75DVr0YWo')" }}
       >
-        <div className="absolute inset-0 bg-black opacity-60" />
+        <div className="absolute inset-0 bg-black opacity-40" />
         <div className="relative z-10 px-4 py-2">
           <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
             LoL Tier List
           </h1>
-          <p className="mt-2 text-lg max-w-2xl mx-auto">
+          <p className="mb-8 text-lg max-w-2xl mx-auto">
             Champion tier list based on win rate, pick rate, and ban rate data.
           </p>
         </div>

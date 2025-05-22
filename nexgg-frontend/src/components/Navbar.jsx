@@ -26,12 +26,12 @@ const Navbar = () => {
             <div className="flex items-center justify-between h-12 w-full pl-8 py-2">
                 <div className="flex items-center space-x-4">
                     <Link to="/" onClick={handleClick}>
-                        <img className="h-5 pr-8" src="/NEXGGLOGO.png" alt="" />
+                        <img className="h-5 pr-8 hover:scale-105" src="/NEXGGLOGO.png" alt="" />
                     </Link>
-                    <Link to="/" className="hover:underline underline-offset-3 text-grey-100 text-sm font-thin">Inicio</Link>
-                    <Link to="/campeones" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Campeones</Link>
+                    <Link to="/" className="hover:underline underline-offset-3 text-grey-100 text-sm font-thin">Home</Link>
+                    <Link to="/campeones" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">All Champion</Link>
                     <Link to="/tierlist" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Tier List</Link>
-                    <Link to="/overlay" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Build</Link>
+                    <Link to="/overlay" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Builds</Link>
                 </div>
                 <div className="flex items-center justify-end">
                     <LolButton />

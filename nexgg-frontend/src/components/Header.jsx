@@ -32,7 +32,7 @@ const Header = () => {
 
             {/* Imagen estática como fondo temporal */}
             <img
-                src="/project-ashe.jpg"
+                src="https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/Ashe/project-ashe.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9Bc2hlL3Byb2plY3QtYXNoZS5qcGciLCJpYXQiOjE3NDc4NDI2MzIsImV4cCI6MTc3OTM3ODYzMn0.LDICi2tlQsN_mMoZnSc0D1hdqpnsElPIXeGIVsaLa8w"
                 alt="Fondo estático"
                 className="absolute inset-0 w-full h-full object-cover"
             />

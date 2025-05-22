@@ -9,7 +9,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
                 <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`px-5 py-2 text-base font-medium uppercase transition-all ${activeTab === tab
+                    className={`px-5 pt-10 pb-4 text-base font-medium uppercase cursor-pointer hover:scale-105 transition-all ${activeTab === tab
                             ? "text-[#FC555C] border-b-2 border-[#FC555C] -mb-0.5"
                             : "text-[#898989]"
                         }`}

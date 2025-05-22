@@ -141,7 +141,7 @@ const items = {
       image: "https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/items/berseker%20boots.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2l0ZW1zL2JlcnNla2VyIGJvb3RzLnBuZyIsImlhdCI6MTc0NjgwNjA3NSwiZXhwIjoxNzc4MzQyMDc1fQ.naHHVzmr2sxCe3ccxcO2f35NXDeGjLc6IESFxSkyntI",
       description: "Grants attack speed",
     },
-     {
+    {
       id: 13,
       name: "Mercurys's Shoes",
       image: "https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/items/mercury.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2l0ZW1zL21lcmN1cnkucG5nIiwiaWF0IjoxNzQ2ODEwNDY0LCJleHAiOjE3NzgzNDY0NjR9._AGVwUE2yIL9OxobsXGwh5NdnTA50snn9NzjBwiqNHU",
@@ -525,14 +525,28 @@ export default function Builds() {
 
   return (
     <div className="min-h-screen bg-[#0A0E13] text-white">
+      {/* Cabecera con imagen de fondo */}
+      <div
+        className="relative h-200 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"
+        style={{ backgroundImage: `url('https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/Jhin/dark-cosmic-erasure-jhin.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9KaGluL2RhcmstY29zbWljLWVyYXN1cmUtamhpbi5qcGciLCJpYXQiOjE3NDc4NDI0NzUsImV4cCI6MTc3OTM3ODQ3NX0.-4FbgtP98wFclMQP27NeeXmhg2VtfdlsZ3bf1RE8X10')` }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 px-4 py-2">
+          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
+            LoL Best Builds          </h1>
+          <p className="mb-8 text-lg max-w-2xl mx-auto">
+            Search for the best bulds for your champion
+          </p>
+        </div>
+      </div>
       {/* Header */}
       <header className="bg-[#0F1923] border-b border-[#1F2731] py-4">
         <div className="max-w-[1200px] mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Gamepad2 className="h-6 w-6 text-[#FF4655]" />
-            
+
           </div>
-      
+
         </div>
       </header>
 
