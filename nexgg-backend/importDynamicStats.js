@@ -24,6 +24,7 @@ async function importStats() {
         ban_rate: item.banRate,
         // updated_at se llenará con DEFAULT now()
     }));
+    
 
     // 3) Upsert en la tabla dynamic_stats
     const { data, error } = await supabase
