@@ -52,3 +52,14 @@ create table public.champion_dynamic_stats (
     updated_at    timestamptz   default now(),
     primary key(patch, champion_id)
 );
+
+
+-- Insertar filas con métricas a 0.0 para los missing
+-- para todos los champions que aún no tengan dynamic_stats
+-- Solución temporal para solucionar el desfase entre capeones que no se han sincronizado correctamente 
+INSERT INTO public.dynamic_stats (champion_id, win_rate, pick_rate, ban_rate)
+SELECT c.id, 0.0, 0.0, 0.0
+FROM public.champions c
+LEFT JOIN public.dynamic_stats d
+  ON c.id = d.champion_id
+WHERE d.champion_id IS NULL;
