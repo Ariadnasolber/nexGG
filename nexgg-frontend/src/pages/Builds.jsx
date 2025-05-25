@@ -83,9 +83,9 @@ export default function Builds() {
     <div className="min-h-screen bg-zinc-900 text-zinc-200">
 
       <div
-        className="relative h-200 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"
+        className="relative h-150 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"
         style={{
-          backgroundImage: `url('https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/Yasuo/truth-dragon-yasuo.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9ZYXN1by90cnV0aC1kcmFnb24teWFzdW8uanBnIiwiaWF0IjoxNzQ4MjA5NjQ4LCJleHAiOjE3Nzk3NDU2NDh9.NmahXB92xevWuqOBAwfUW2H1c8C15esDY0Uh14mZBP8')`
+          backgroundImage: `url('https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/Viego/soul-fighter-viego.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9WaWVnby9zb3VsLWZpZ2h0ZXItdmllZ28uanBnIiwiaWF0IjoxNzQ4MjEyNzg4LCJleHAiOjE3Nzk3NDg3ODh9.DmKCwr1IJODrGkxUCmUtrj0Zv1gMMS5q3LTG7393B0o')`
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>

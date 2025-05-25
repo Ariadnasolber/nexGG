@@ -37,7 +37,7 @@ export function FilterDropdown({ label, options, selected, setSelected }) {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 bg-zinc-800 text-white border border-zinc-800 rounded-md hover:bg-zinc-700 text-sm font-medium"
+        className="flex items-center gap-2 px-4 py-2 bg-zinc-900 text-white border border-zinc-800 rounded-md hover:bg-zinc-700 text-sm font-medium"
       >
         <Filter size={14} />
         <span>{label}: {selected}</span>
@@ -45,7 +45,7 @@ export function FilterDropdown({ label, options, selected, setSelected }) {
       </button>
 
       {isOpen && (
-        <div className="absolute mt-1 w-40 bg-zinc-800 border border-zinc-800 rounded-md shadow-lg z-10">
+        <div className="absolute mt-1 w-40 bg-zinc-800 border border-zinc-900 rounded-md shadow-lg z-10">
           {options.map((opt) => (
             <button
               key={opt}

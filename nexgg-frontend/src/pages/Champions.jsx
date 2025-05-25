@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect, useMemo } from "react";
 import ChampionGrid from "../ui/ChampionGrid";
+import SearchBar from "../ui/SearchBar";
 import { getChampions } from "../services/api";
 
 export default function Champions() {
     const [champions, setChampions] = useState([]);
+    const [selectedRole, setSelectedRole] = useState("All");
+    const [selectedDifficulty, setSelectedDifficulty] = useState("All");
+    const [searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
         getChampions()
@@ -11,24 +16,48 @@ export default function Champions() {
                 const normalized = data.map((champ) => ({
                     ...champ,
                     roles: champ.role || [],
-                    positions: champ.position || [],
+                    difficulty: champ.difficulty || "Moderate",
+                    positions: champ.position || [],       // asegura array
                     splash: champ.splash_url,
                     icon: champ.icon_url,
-
-                    winRate: champ.win_rate != null ? champ.win_rate.toFixed(1) : "0.0",
-                    pickRate: champ.pick_rate != null ? champ.pick_rate.toFixed(1) : "0.0",
-                    banRate: champ.ban_rate != null ? champ.ban_rate.toFixed(1) : "0.0",
+                    winRate:
+                        champ.win_rate != null ? champ.win_rate.toFixed(1) : "0.0",
+                    pickRate:
+                        champ.pick_rate != null ? champ.pick_rate.toFixed(1) : "0.0",
+                    banRate:
+                        champ.ban_rate != null ? champ.ban_rate.toFixed(1) : "0.0",
                 }));
                 setChampions(normalized);
             })
             .catch((err) => console.error("Error fetching champions:", err));
     }, []);
 
+    const filteredChampions = useMemo(() => {
+        return champions.filter((c) => {
+            if (selectedRole !== "All" && !c.roles.includes(selectedRole)) {
+                return false;
+            }
+            if (
+                selectedDifficulty !== "All" &&
+                c.difficulty !== selectedDifficulty
+            ) {
+                return false;
+            }
+            if (
+                searchQuery.trim() &&
+                !c.name.toLowerCase().includes(searchQuery.toLowerCase())
+            ) {
+                return false;
+            }
+            return true;
+        });
+    }, [champions, selectedRole, selectedDifficulty, searchQuery]);
+
     return (
         <div className="min-h-screen bg-[#0F0F12] text-white">
             {/* Cabecera con imagen de fondo */}
             <div
-                className="relative h-200 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"
+                className="relative h-150 bg-cover bg-no-repeat bg-[center_0%] flex items-center justify-center flex-col text-center"
                 style={{
                     backgroundImage: `url('https://srnziivmkegvqguausey.supabase.co/storage/v1/object/sign/imagenes/lol-assets/champions/MissFortune/bg-missfortune.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzUyMDg3Y2FlLWM1MzMtNGFlOS1hMTVjLWEyNTM0MGQ3NzZlMSJ9.eyJ1cmwiOiJpbWFnZW5lcy9sb2wtYXNzZXRzL2NoYW1waW9ucy9NaXNzRm9ydHVuZS9iZy1taXNzZm9ydHVuZS5qcGVnIiwiaWF0IjoxNzQ3ODQyNTM2LCJleHAiOjE3NzkzNzg1MzZ9.ZrLCYHMrmZ5lHTS5-6cune0XhTJoCINZt5sDrYG3Adk')`,
                 }}
@@ -41,12 +70,23 @@ export default function Champions() {
                     <p className="text-lg max-w-2xl mx-auto mb-8">
                         View all League of Legends champions, their stats, and performance data.
                     </p>
+                    <SearchBar
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search champions..."
+                />
+                <div className="px-6 pb-4">
+                
+            </div>
                 </div>
             </div>
 
-            {/* Contenido principal */}
+            {/* Filtros y búsqueda */}
+            
+
+            {/* Cuadrícula de campeones filtrada */}
             <div className="p-6">
-                <ChampionGrid champions={champions} />
+                <ChampionGrid champions={filteredChampions} />
             </div>
         </div>
     );

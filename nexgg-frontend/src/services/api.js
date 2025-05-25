@@ -12,9 +12,10 @@ export const getSummonerProfile = async (summonerName) => {
 
 // champions
 export const getChampions = async () => {
-  const res = await api.get('/champions');
+  const res = await api.get("/champions");
   return res.data;
 };
+
 
 // tierlist
 export const getTierlists = async () => {
@@ -49,3 +50,4 @@ export const getChampionById = async (id) => {
   const res = await api.get(`/champions/${id}`);
   return res.data;
 };
+
