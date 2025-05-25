@@ -34,7 +34,7 @@ const HeaderSection = ({ champion }) => {
                         {champion.roles.map((role) => (
                             <span
                                 key={role}
-                                className={`px-2 py-1 rounded text-xs ${roleClasses[role] ?? "bg-gray-500/20 text-gray-300"}`}
+                                className={`px-2 py-1 rounded text-xs ${roleClasses[role] ?? "bg-zinc-500/20 text-zinc-300"}`}
                             >
                                 {role}
                             </span>
@@ -65,9 +65,9 @@ const HeaderSection = ({ champion }) => {
 const Stat = ({ label, raw, suffix }) => {
     // intentamos parsear el número para colorear
     const num = parseFloat(raw);
-    let colorClass = "text-gray-200";
+    let colorClass = "text-zinc-200";
     if (!isNaN(num) && suffix === "%") {
-        colorClass = num > 50 ? "text-green-400" : num < 50 ? "text-red-400" : "text-gray-200";
+        colorClass = num > 50 ? "text-green-400" : num < 50 ? "text-red-400" : "text-zinc-200";
     }
     return (
         <div className="flex flex-col items-center">

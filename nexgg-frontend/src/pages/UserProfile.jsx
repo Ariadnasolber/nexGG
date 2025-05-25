@@ -171,21 +171,21 @@ const AvatarImage = ({ src, alt }) => (
 )
 
 const AvatarFallback = ({ children, className }) => (
-  <div className={`flex h-full w-full items-center justify-center bg-gray-700 text-white ${className}`}>{children}</div>
+  <div className={`flex h-full w-full items-center justify-center bg-zinc-700 text-white ${className}`}>{children}</div>
 )
 
 const Button = ({ children, className, variant }) => {
   const baseClasses = "px-4 py-2 rounded-md font-medium focus:outline-none transition-colors"
   const variantClasses =
     variant === "outline"
-      ? "border border-gray-700 bg-[#1A1A1C] text-white hover:bg-[#2A2A2C]"
+      ? "border border-zinc-700 bg-[#1A1A1C] text-white hover:bg-[#2A2A2C]"
       : "bg-red-600 text-white hover:bg-red-700"
 
   return <button className={`${baseClasses} ${variantClasses} ${className}`}>{children}</button>
 }
 
 const Progress = ({ value, className, indicatorClassName }) => (
-  <div className={`h-2 w-full bg-gray-700 rounded-full overflow-hidden ${className}`}>
+  <div className={`h-2 w-full bg-zinc-700 rounded-full overflow-hidden ${className}`}>
     <div className={`h-full bg-blue-500 ${indicatorClassName}`} style={{ width: `${value}%` }} />
   </div>
 )
@@ -226,7 +226,7 @@ const TabsList = ({ children, className, activeTab, setActiveTab }) => {
 
 const TabsTrigger = ({ children, value, active, onClick, className }) => (
   <button
-    className={`px-4 py-2 text-sm font-medium transition-colors ${active ? "bg-[#1A1A1C] text-white" : "text-gray-400 hover:text-white"} ${className}`}
+    className={`px-4 py-2 text-sm font-medium transition-colors ${active ? "bg-[#1A1A1C] text-white" : "text-zinc-400 hover:text-white"} ${className}`}
     onClick={onClick}
   >
     {children}
@@ -241,7 +241,7 @@ export default function UserProfile() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0A0A0C] text-white">
       {/* Navigation Bar */}
-      <header className="border-b border-gray-800 bg-[#0A0A0C]">
+      <header className="border-b border-zinc-800 bg-[#0A0A0C]">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-6">
@@ -254,19 +254,19 @@ export default function UserProfile() {
 
             <div className="flex items-center space-x-4">
               <div className="relative">
-                <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4">
+                <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-zinc-500 h-4 w-4">
                   <Search />
                 </div>
                 <input
                   type="text"
                   placeholder="Search"
-                  className="bg-[#1A1A1C] text-gray-300 pl-10 pr-4 py-2 rounded-md w-64 focus:outline-none focus:ring-1 focus:ring-gray-700"
+                  className="bg-[#1A1A1C] text-zinc-300 pl-10 pr-4 py-2 rounded-md w-64 focus:outline-none focus:ring-1 focus:ring-zinc-700"
                 />
               </div>
-              <Button variant="outline" className="bg-[#1A1A1C] text-white border-gray-700 hover:bg-[#2A2A2C]">
+              <Button variant="outline" className="bg-[#1A1A1C] text-white border-zinc-700 hover:bg-[#2A2A2C]">
                 Sign In
               </Button>
-              <span className="text-gray-400">English</span>
+              <span className="text-zinc-400">English</span>
             </div>
           </div>
         </div>
@@ -289,7 +289,7 @@ export default function UserProfile() {
                   <h1 className="text-white text-2xl font-bold">ProGamer123</h1>
                   <div className="flex items-center space-x-2 mt-1">
                     <div className="bg-blue-600 text-white text-xs px-2 py-1 rounded">Level 156</div>
-                    <span className="text-gray-400 text-sm">Last online: 2h ago</span>
+                    <span className="text-zinc-400 text-sm">Last online: 2h ago</span>
                   </div>
                 </div>
               </div>
@@ -297,10 +297,10 @@ export default function UserProfile() {
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between text-sm mb-1">
-                    <span className="text-gray-400">Season Progress</span>
+                    <span className="text-zinc-400">Season Progress</span>
                     <span className="text-white">156 / 200</span>
                   </div>
-                  <Progress value={78} className="h-2 bg-gray-700" indicatorClassName="bg-blue-500" />
+                  <Progress value={78} className="h-2 bg-zinc-700" indicatorClassName="bg-blue-500" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -311,7 +311,7 @@ export default function UserProfile() {
                       </div>
                       <div>
                         <div className="text-white text-sm font-medium">Rank</div>
-                        <div className="text-gray-400 text-xs">Diamond II</div>
+                        <div className="text-zinc-400 text-xs">Diamond II</div>
                       </div>
                     </div>
                   </div>
@@ -322,7 +322,7 @@ export default function UserProfile() {
                       </div>
                       <div>
                         <div className="text-white text-sm font-medium">Play Time</div>
-                        <div className="text-gray-400 text-xs">1,245 hours</div>
+                        <div className="text-zinc-400 text-xs">1,245 hours</div>
                       </div>
                     </div>
                   </div>
@@ -333,7 +333,7 @@ export default function UserProfile() {
                       </div>
                       <div>
                         <div className="text-white text-sm font-medium">Win Rate</div>
-                        <div className="text-gray-400 text-xs">58.3%</div>
+                        <div className="text-zinc-400 text-xs">58.3%</div>
                       </div>
                     </div>
                   </div>
@@ -344,7 +344,7 @@ export default function UserProfile() {
                       </div>
                       <div>
                         <div className="text-white text-sm font-medium">KDA</div>
-                        <div className="text-gray-400 text-xs">3.42:1</div>
+                        <div className="text-zinc-400 text-xs">3.42:1</div>
                       </div>
                     </div>
                   </div>
@@ -369,10 +369,10 @@ export default function UserProfile() {
                     <div className="flex-1">
                       <div className="flex justify-between">
                         <span className="text-white text-sm font-medium">Champion {i}</span>
-                        <span className="text-gray-400 text-xs">58% WR</span>
+                        <span className="text-zinc-400 text-xs">58% WR</span>
                       </div>
                       <div className="flex justify-between mt-1">
-                        <span className="text-gray-400 text-xs">125 games</span>
+                        <span className="text-zinc-400 text-xs">125 games</span>
                         <span className="text-green-500 text-xs">3.8 KDA</span>
                       </div>
                     </div>
@@ -393,15 +393,15 @@ export default function UserProfile() {
                   <div>
                     <h2 className="text-white text-xl font-bold">{selectedGame}</h2>
                     <div className="flex items-center space-x-2 mt-1">
-                      <span className="text-gray-400 text-sm">Season 14</span>
-                      <span className="text-gray-600">•</span>
-                      <span className="text-gray-400 text-sm">Summoner's Rift</span>
+                      <span className="text-zinc-400 text-sm">Season 14</span>
+                      <span className="text-zinc-600">•</span>
+                      <span className="text-zinc-400 text-sm">Summoner's Rift</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Button variant="outline" className="bg-[#252529] text-white border-gray-700 hover:bg-[#2A2A2C]">
+                  <Button variant="outline" className="bg-[#252529] text-white border-zinc-700 hover:bg-[#2A2A2C]">
                     <div className="flex items-center">
                       <span>This Season</span>
                       <div className="ml-2 h-4 w-4">
@@ -424,21 +424,21 @@ export default function UserProfile() {
                 <TabsContent value="overview">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
                     <div className="bg-[#252529] rounded-lg p-4">
-                      <div className="text-gray-400 text-sm mb-1">Rank</div>
+                      <div className="text-zinc-400 text-sm mb-1">Rank</div>
                       <div className="flex items-center space-x-3">
                         <div className="bg-[#1A1A1C] rounded-md p-2">
                           <img src="./public/diamannte.png" alt="Diamond Rank" className="w-12 h-12" />
                         </div>
                         <div>
                           <div className="text-white font-semibold">Diamond II</div>
-                          <div className="text-gray-400 text-sm">75 LP / 156W 112L</div>
-                          <div className="text-gray-400 text-sm">Win Rate 58%</div>
+                          <div className="text-zinc-400 text-sm">75 LP / 156W 112L</div>
+                          <div className="text-zinc-400 text-sm">Win Rate 58%</div>
                         </div>
                       </div>
                     </div>
 
                     <div className="bg-[#252529] rounded-lg p-4">
-                      <div className="text-gray-400 text-sm mb-1">Last 20 Matches</div>
+                      <div className="text-zinc-400 text-sm mb-1">Last 20 Matches</div>
                       <div className="flex items-center space-x-2 mb-2">
                         <div className="text-green-500 font-semibold">12W</div>
                         <div className="text-red-500 font-semibold">8L</div>
@@ -455,7 +455,7 @@ export default function UserProfile() {
                     </div>
 
                     <div className="bg-[#252529] rounded-lg p-4">
-                      <div className="text-gray-400 text-sm mb-1">Most Played Role</div>
+                      <div className="text-zinc-400 text-sm mb-1">Most Played Role</div>
                       <div className="flex items-center space-x-3">
                         <div className="bg-[#1A1A1C] rounded-md p-2">
                           <div className="h-10 w-10 text-blue-500">
@@ -464,7 +464,7 @@ export default function UserProfile() {
                         </div>
                         <div>
                           <div className="text-white font-semibold">Support</div>
-                          <div className="text-gray-400 text-sm">156 games (65%)</div>
+                          <div className="text-zinc-400 text-sm">156 games (65%)</div>
                           <div className="text-green-500 text-sm">62% WR</div>
                         </div>
                       </div>
@@ -493,23 +493,23 @@ export default function UserProfile() {
                               </Avatar>
                               <div>
                                 <div className="text-white text-sm font-medium">Champion {i}</div>
-                                <div className="text-gray-400 text-xs">Support</div>
+                                <div className="text-zinc-400 text-xs">Support</div>
                               </div>
                             </div>
 
                             <div className="w-1/4">
                               <div className="text-white text-sm font-medium">{i % 3 === 0 ? "Defeat" : "Victory"}</div>
-                              <div className="text-gray-400 text-xs">Ranked Solo</div>
+                              <div className="text-zinc-400 text-xs">Ranked Solo</div>
                             </div>
 
                             <div className="w-1/4">
                               <div className="text-white text-sm font-medium">3/{i + 2}/8</div>
-                              <div className="text-gray-400 text-xs">KDA: 2.75</div>
+                              <div className="text-zinc-400 text-xs">KDA: 2.75</div>
                             </div>
 
                             <div className="w-1/4 text-right">
                               <div className="text-white text-sm font-medium">25m 42s</div>
-                              <div className="text-gray-400 text-xs">2 hours ago</div>
+                              <div className="text-zinc-400 text-xs">2 hours ago</div>
                             </div>
                           </div>
                         </div>
@@ -517,7 +517,7 @@ export default function UserProfile() {
                     </div>
 
                     <div className="mt-4 text-center">
-                      <Button variant="outline" className="bg-[#1A1A1C] text-white border-gray-700 hover:bg-[#2A2A2C]">
+                      <Button variant="outline" className="bg-[#1A1A1C] text-white border-zinc-700 hover:bg-[#2A2A2C]">
                         Load More Matches
                       </Button>
                     </div>
@@ -525,19 +525,19 @@ export default function UserProfile() {
                 </TabsContent>
 
                 <TabsContent value="champions">
-                  <div className="text-gray-400 text-center py-12">Champions stats content would go here</div>
+                  <div className="text-zinc-400 text-center py-12">Champions stats content would go here</div>
                 </TabsContent>
 
                 <TabsContent value="matches">
-                  <div className="text-gray-400 text-center py-12">Match history content would go here</div>
+                  <div className="text-zinc-400 text-center py-12">Match history content would go here</div>
                 </TabsContent>
 
                 <TabsContent value="stats">
-                  <div className="text-gray-400 text-center py-12">Detailed stats content would go here</div>
+                  <div className="text-zinc-400 text-center py-12">Detailed stats content would go here</div>
                 </TabsContent>
 
                 <TabsContent value="leaderboards">
-                  <div className="text-gray-400 text-center py-12">Leaderboards content would go here</div>
+                  <div className="text-zinc-400 text-center py-12">Leaderboards content would go here</div>
                 </TabsContent>
               </Tabs>
             </div>

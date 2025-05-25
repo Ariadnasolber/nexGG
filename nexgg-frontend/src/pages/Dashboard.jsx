@@ -94,7 +94,7 @@ const AvatarImage = ({ src, alt }) => (
 );
 
 const AvatarFallback = ({ children, className }) => (
-  <div className={`flex h-full w-full items-center justify-center bg-gray-700 text-white ${className}`}>
+  <div className={`flex h-full w-full items-center justify-center bg-zinc-700 text-white ${className}`}>
     {children}
   </div>
 );
@@ -102,7 +102,7 @@ const AvatarFallback = ({ children, className }) => (
 const Button = ({ children, className, variant, onClick }) => {
   const baseClasses = "px-4 py-2 rounded-md font-medium focus:outline-none transition-colors";
   const variantClasses = variant === "outline" 
-    ? "border border-gray-700 bg-[#1A1A1C] text-white hover:bg-[#2A2A2C]" 
+    ? "border border-zinc-700 bg-[#1A1A1C] text-white hover:bg-[#2A2A2C]" 
     : "bg-[#ff7762] text-white hover:bg-[#ff6a52]";
   
   return (
@@ -124,7 +124,7 @@ const Badge = ({ children, variant = "default" }) => {
     variant === "warning" ? "bg-yellow-500 bg-opacity-20 text-yellow-500" :
     variant === "danger" ? "bg-red-500 bg-opacity-20 text-red-500" :
     variant === "info" ? "bg-blue-500 bg-opacity-20 text-blue-500" :
-    "bg-gray-500 bg-opacity-20 text-gray-500";
+    "bg-zinc-500 bg-opacity-20 text-zinc-500";
   
   return (
     <span className={`text-xs px-2 py-1 rounded-full ${variantClasses}`}>
@@ -163,7 +163,7 @@ export default function AdminDashboard() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0A0A0C] text-white">
       {/* Header */}
-      <header className="bg-[#1A1A1C] border-b border-gray-800 py-4">
+      <header className="bg-[#1A1A1C] border-b border-zinc-800 py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
@@ -173,7 +173,7 @@ export default function AdminDashboard() {
               <h1 className="text-xl font-bold">Blitz Admin</h1>
             </div>
             <div className="flex items-center space-x-4">
-              <button className="text-gray-400 hover:text-white">
+              <button className="text-zinc-400 hover:text-white">
                 <Bell />
               </button>
               <div className="flex items-center space-x-2">
@@ -215,7 +215,7 @@ export default function AdminDashboard() {
               <Users className="h-6 w-6 text-blue-500" />
             </div>
             <div>
-              <p className="text-gray-400 text-sm">Total Usuarios</p>
+              <p className="text-zinc-400 text-sm">Total Usuarios</p>
               <h3 className="text-xl font-bold">{stats.totalUsers.toLocaleString()}</h3>
               <p className="text-green-500 text-xs">+{stats.newUsers.toLocaleString()} esta semana</p>
             </div>
@@ -226,9 +226,9 @@ export default function AdminDashboard() {
               <BarChart className="h-6 w-6 text-green-500" />
             </div>
             <div>
-              <p className="text-gray-400 text-sm">Partidas Diarias</p>
+              <p className="text-zinc-400 text-sm">Partidas Diarias</p>
               <h3 className="text-xl font-bold">{stats.dailyMatches.toLocaleString()}</h3>
-              <p className="text-gray-400 text-xs">{stats.totalMatches.toLocaleString()} total</p>
+              <p className="text-zinc-400 text-xs">{stats.totalMatches.toLocaleString()} total</p>
             </div>
           </Card>
           
@@ -244,7 +244,7 @@ export default function AdminDashboard() {
               <Shield className="h-6 w-6 text-purple-500" />
             </div>
             <div>
-              <p className="text-gray-400 text-sm">Salud del Sistema</p>
+              <p className="text-zinc-400 text-sm">Salud del Sistema</p>
               <h3 className="text-xl font-bold">{stats.systemHealth}%</h3>
               <p className="text-green-500 text-xs">Todos los sistemas operativos</p>
             </div>
@@ -263,7 +263,7 @@ export default function AdminDashboard() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-left text-gray-400 border-b border-gray-800">
+                <tr className="text-left text-zinc-400 border-b border-zinc-800">
                   <th className="pb-3 pl-4">Usuario</th>
                   <th className="pb-3">Email</th>
                   <th className="pb-3">Estado</th>
@@ -274,7 +274,7 @@ export default function AdminDashboard() {
               </thead>
               <tbody>
                 {recentUsers.slice(0, 3).map((user) => (
-                  <tr key={user.id} className="border-b border-gray-800 hover:bg-[#252529]">
+                  <tr key={user.id} className="border-b border-zinc-800 hover:bg-[#252529]">
                     <td className="py-4 pl-4">
                       <div className="flex items-center">
                         <Avatar className="h-8 w-8 rounded-full mr-3">
@@ -299,13 +299,13 @@ export default function AdminDashboard() {
                     <td className="py-4">{user.lastLogin}</td>
                     <td className="py-4 text-right pr-4">
                       <div className="flex justify-end space-x-2">
-                        <button className="p-1 text-gray-400 hover:text-white">
+                        <button className="p-1 text-zinc-400 hover:text-white">
                           <Eye className="h-4 w-4" />
                         </button>
-                        <button className="p-1 text-gray-400 hover:text-blue-500">
+                        <button className="p-1 text-zinc-400 hover:text-blue-500">
                           <Edit className="h-4 w-4" />
                         </button>
-                        <button className="p-1 text-gray-400 hover:text-red-500">
+                        <button className="p-1 text-zinc-400 hover:text-red-500">
                           <Trash className="h-4 w-4" />
                         </button>
                       </div>
@@ -328,7 +328,7 @@ export default function AdminDashboard() {
               </div>
               <div>
                 <h3 className="font-bold">Gestionar Usuarios</h3>
-                <p className="text-gray-400 text-sm mt-1">Administrar cuentas y permisos</p>
+                <p className="text-zinc-400 text-sm mt-1">Administrar cuentas y permisos</p>
               </div>
             </div>
           </Card>
@@ -340,7 +340,7 @@ export default function AdminDashboard() {
               </div>
               <div>
                 <h3 className="font-bold">Editar Campeones</h3>
-                <p className="text-gray-400 text-sm mt-1">Actualizar información y estadísticas</p>
+                <p className="text-zinc-400 text-sm mt-1">Actualizar información y estadísticas</p>
               </div>
             </div>
           </Card>
@@ -352,7 +352,7 @@ export default function AdminDashboard() {
               </div>
               <div>
                 <h3 className="font-bold">Configuración</h3>
-                <p className="text-gray-400 text-sm mt-1">Ajustes del sistema y mantenimiento</p>
+                <p className="text-zinc-400 text-sm mt-1">Ajustes del sistema y mantenimiento</p>
               </div>
             </div>
           </Card>

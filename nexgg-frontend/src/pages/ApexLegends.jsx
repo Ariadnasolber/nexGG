@@ -27,7 +27,7 @@ export default function ApexLegends() {
         <h1 className="text-5xl md:text-6xl font-extrabold text-[#FFF] uppercase tracking-wider mb-4">
           Coming Soon
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-xl mb-8">
+        <p className="text-lg md:text-xl text-zinc-300 max-w-xl mb-8">
           Próximamente podrás acceder a estadísticas y builds de Apex Legends.
         </p>
         <button

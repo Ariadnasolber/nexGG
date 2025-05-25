@@ -56,7 +56,7 @@ export default function ComingSoonChampProfile() {
   // Loading state
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-gray-900 text-white">
+      <div className="flex items-center justify-center h-screen bg-zinc-900 text-white">
         <div className="text-center">
           <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
           <p className="text-xl">
@@ -68,7 +68,7 @@ export default function ComingSoonChampProfile() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 text-white">
       {/* Header with champion teaser */}
       <div className="relative h-64 md:h-96 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
@@ -81,31 +81,31 @@ export default function ComingSoonChampProfile() {
             {champ ? champ.toUpperCase() : "CHAMPION"} PROFILE
           </h1>
           <div className="w-24 h-1 bg-blue-500 mb-4"></div>
-          <p className="text-xl md:text-2xl text-gray-200">Coming Soon</p>
+          <p className="text-xl md:text-2xl text-zinc-200">Coming Soon</p>
         </div>
       </div>
 
       {/* Countdown section */}
       <div className="max-w-6xl mx-auto p-6 md:p-10">
-        <div className="bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg p-8 border border-gray-700">
+        <div className="bg-zinc-800/80 backdrop-blur-sm rounded-lg shadow-lg p-8 border border-zinc-700">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Champion Profile Launching In</h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-            <div className="bg-gray-900 rounded-lg p-4 text-center">
+            <div className="bg-zinc-900 rounded-lg p-4 text-center">
               <span className="block text-3xl md:text-5xl font-bold text-blue-400">{countdown.days}</span>
-              <span className="text-gray-400">Days</span>
+              <span className="text-zinc-400">Days</span>
             </div>
-            <div className="bg-gray-900 rounded-lg p-4 text-center">
+            <div className="bg-zinc-900 rounded-lg p-4 text-center">
               <span className="block text-3xl md:text-5xl font-bold text-blue-400">{countdown.hours}</span>
-              <span className="text-gray-400">Hours</span>
+              <span className="text-zinc-400">Hours</span>
             </div>
-            <div className="bg-gray-900 rounded-lg p-4 text-center">
+            <div className="bg-zinc-900 rounded-lg p-4 text-center">
               <span className="block text-3xl md:text-5xl font-bold text-blue-400">{countdown.minutes}</span>
-              <span className="text-gray-400">Minutes</span>
+              <span className="text-zinc-400">Minutes</span>
             </div>
-            <div className="bg-gray-900 rounded-lg p-4 text-center">
+            <div className="bg-zinc-900 rounded-lg p-4 text-center">
               <span className="block text-3xl md:text-5xl font-bold text-blue-400">{countdown.seconds}</span>
-              <span className="text-gray-400">Seconds</span>
+              <span className="text-zinc-400">Seconds</span>
             </div>
           </div>
 
@@ -113,19 +113,19 @@ export default function ComingSoonChampProfile() {
           <div className="mb-10">
             <h3 className="text-xl font-bold mb-4 text-center">Coming Features</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div className="bg-gray-900/60 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors">
+              <div className="bg-zinc-900/60 p-4 rounded-lg border border-zinc-700 hover:border-blue-500 transition-colors">
                 <div className="text-3xl mb-2">🛠️</div>
                 <h4 className="font-bold">Build Guide</h4>
               </div>
-              <div className="bg-gray-900/60 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors">
+              <div className="bg-zinc-900/60 p-4 rounded-lg border border-zinc-700 hover:border-blue-500 transition-colors">
                 <div className="text-3xl mb-2">⚔️</div>
                 <h4 className="font-bold">ARAM Stats</h4>
               </div>
-              <div className="bg-gray-900/60 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors">
+              <div className="bg-zinc-900/60 p-4 rounded-lg border border-zinc-700 hover:border-blue-500 transition-colors">
                 <div className="text-3xl mb-2">🤝</div>
                 <h4 className="font-bold">Synergies</h4>
               </div>
-              <div className="bg-gray-900/60 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors">
+              <div className="bg-zinc-900/60 p-4 rounded-lg border border-zinc-700 hover:border-blue-500 transition-colors">
                 <div className="text-3xl mb-2">✨</div>
                 <h4 className="font-bold">Abilities</h4>
               </div>
@@ -141,7 +141,7 @@ export default function ComingSoonChampProfile() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="flex-1 px-4 py-2 rounded-md bg-zinc-700 border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
               />
               <button
@@ -156,7 +156,7 @@ export default function ComingSoonChampProfile() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-12 py-6 text-center text-gray-400 border-t border-gray-700">
+      <footer className="mt-12 py-6 text-center text-zinc-400 border-t border-zinc-700">
         <p>© {new Date().getFullYear()} League of Legends Champion Guides. All rights reserved.</p>
       </footer>
     </div>

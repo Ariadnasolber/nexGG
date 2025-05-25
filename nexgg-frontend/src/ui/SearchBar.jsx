@@ -7,13 +7,13 @@ export default function SearchBar({
 }) {
   return (
     <div className="relative w-full max-w-md mb-6">
-      <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none">
+      <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-zinc-400 pointer-events-none">
         <Search size={16} />
       </div>
       
       <input
         type="text"
-        className="w-full pl-10 pr-4 py-2 bg-[#0D1117] border border-gray-800 rounded text-sm text-white focus:outline-none focus:border-[#ff7762] focus:ring-2 focus:ring-[#ff7146]/30"
+        className="w-full pl-10 pr-4 py-2 bg-[#0D1117] border border-zinc-800 rounded text-sm text-white focus:outline-none focus:border-[#ff7762] focus:ring-2 focus:ring-[#ff7146]/30"
         placeholder={placeholder}
         value={value}
         onChange={onChange}

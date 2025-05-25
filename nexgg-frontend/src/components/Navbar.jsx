@@ -21,7 +21,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-[#0F1015]/80 text-gray-300 px-0 flex justify-between items-center flex-col fixed top-0 left-0 w-full z-50 shadow-lg">
+        <nav className="bg-[#0F1015]/80 text-zinc-300 px-0 flex justify-between items-center flex-col fixed top-0 left-0 w-full z-50 shadow-lg">
             {/* Parte superior */}
             <div className="flex items-center justify-between h-12 w-full pl-8 py-2">
                 <div className="flex items-center space-x-4">
@@ -58,7 +58,7 @@ const Navbar = () => {
                     <input
                         type="text"
                         placeholder="Buscar..."
-                        className="px-2 py-1 rounded bg-[#282A2F] text-white text-sm font-thin ring-1 ring-gray-700 hover:bg-gray-950 focus:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-gray-700 w-150 h-7 font-sans"
+                        className="px-2 py-1 rounded bg-[#282A2F] text-white text-sm font-thin ring-1 ring-zinc-700 hover:bg-zinc-950 focus:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-700 w-150 h-7 font-sans"
                     />
                     <LenguageButton />
                 </div>

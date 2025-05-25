@@ -31,7 +31,7 @@ export default function MarvelRivals() {
         <h1 className="text-5xl md:text-6xl font-extrabold text-[#FF4747] uppercase tracking-wider mb-4">
           Coming Soon
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-xl mb-8">
+        <p className="text-lg md:text-xl text-zinc-300 max-w-xl mb-8">
           Prepárate para la llegada de Marvel Rivals en NEX.GG.
         </p>
         <button

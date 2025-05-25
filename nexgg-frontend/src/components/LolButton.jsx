@@ -2,7 +2,7 @@ import React from "react";
 
 const LolButton = () => {
     return (
-        <button className="m-0 text-white text-sm font-thin hover:text-white hover:bg-gray-950 h-15 w-fit cursor-pointer flex items-center justify-center gap-3 px-4">
+        <button className="m-0 text-white text-sm font-thin hover:text-white hover:bg-zinc-950 h-15 w-fit cursor-pointer flex items-center justify-center gap-3 px-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
                         <path
                             fill="#D39018"

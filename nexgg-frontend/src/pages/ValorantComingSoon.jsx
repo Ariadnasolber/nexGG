@@ -32,7 +32,7 @@ export default function ValorantComingSoon() {
         <h1 className="text-5xl md:text-6xl font-extrabold text-[#FFF] uppercase tracking-wider mb-4">
           Coming Soon
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-xl mb-8">
+        <p className="text-lg md:text-xl text-zinc-300 max-w-xl mb-8">
           Preparados para entrar en acción. Valorant llegará muy pronto. ¡Mantente alerta!
         </p>
         <button

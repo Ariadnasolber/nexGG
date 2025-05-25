@@ -19,7 +19,7 @@ export default function ChampionCard({ champion }) {
 
     return (
         <Link to={`/champions/${champion.id}`} className="block">
-            <div className="bg-gray-800 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
+            <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full">
                 <div className="relative h-40 w-full overflow-hidden">
                     <img
                         src={champion.splash || `/placeholder.svg?height=160&width=300`}
@@ -29,7 +29,7 @@ export default function ChampionCard({ champion }) {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 p-3">
                         <h3 className="text-lg font-bold">{champion.name}</h3>
-                        <p className="text-sm text-gray-300">{champion.title}</p>
+                        <p className="text-sm text-zinc-300">{champion.title}</p>
                     </div>
                     {/* positions */}
                     <div className="absolute top-2 right-2 flex gap-1">
@@ -48,7 +48,7 @@ export default function ChampionCard({ champion }) {
                 <div className="p-3">
                     <div className="flex justify-between mb-2 text-xs">
                         <div className="flex flex-col">
-                            <span className="text-gray-400">Difficulty: </span>
+                            <span className="text-zinc-400">Difficulty: </span>
                             <span
                                 className={`${difficultyClass[champion.difficulty]} font-medium`}
                             >
@@ -56,7 +56,7 @@ export default function ChampionCard({ champion }) {
                             </span>
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-gray-400">Win Rate: </span>
+                            <span className="text-zinc-400">Win Rate: </span>
                             <span className="text-white font-medium">
                                 {champion.winRate}%
                             </span>
@@ -64,13 +64,13 @@ export default function ChampionCard({ champion }) {
                     </div>
                     <div className="flex justify-between text-xs">
                         <div className="flex flex-col">
-                            <span className="text-gray-400">Pick Rate: </span>
+                            <span className="text-zinc-400">Pick Rate: </span>
                             <span className="text-white font-medium">
                                 {champion.pickRate}%
                             </span>
                         </div>
                         <div className="flex flex-col">
-                            <span className="text-gray-400">Ban Rate: </span>
+                            <span className="text-zinc-400">Ban Rate: </span>
                             <span className="text-white font-medium">
                                 {champion.banRate}%
                             </span>

@@ -322,8 +322,8 @@ export default function Tierlist() {
               className={cn(
                 "flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md border",
                 isUpdating
-                  ? "opacity-50 cursor-not-allowed bg-gray-700"
-                  : "bg-[#1A1F2A] border-gray-800 hover:bg-gray-800"
+                  ? "opacity-50 cursor-not-allowed bg-zinc-700"
+                  : "bg-[#1A1F2A] border-zinc-800 hover:bg-zinc-800"
               )}
             >
               <RefreshCw
@@ -336,7 +336,7 @@ export default function Tierlist() {
         </div>
 
         {/* Última actualización */}
-        <div className="flex items-center gap-2 mb-6 text-gray-400 text-sm">
+        <div className="flex items-center gap-2 mb-6 text-zinc-400 text-sm">
           <Info size={16} />
           <span>
             Last updated: {lastUpdated.toLocaleString()}
@@ -354,7 +354,7 @@ export default function Tierlist() {
             />
           ))}
           {filteredChampions.length === 0 && (
-            <div className="text-center text-gray-400">
+            <div className="text-center text-zinc-400">
               No champions found matching your filters.
             </div>
           )}
@@ -371,14 +371,14 @@ function FilterDropdown({ label, options, selected, setSelected }) {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 bg-[#1A1F2A] border border-gray-800 rounded-md hover:bg-gray-800"
+        className="flex items-center gap-2 px-4 py-2 bg-[#1A1F2A] border border-zinc-800 rounded-md hover:bg-zinc-800"
       >
         <Filter size={14} />
         <span>{label}: {selected}</span>
         <ChevronDown size={14} />
       </button>
       {isOpen && (
-        <div className="absolute mt-1 w-40 bg-[#1A1F2A] border border-gray-800 rounded-md shadow-lg z-10">
+        <div className="absolute mt-1 w-40 bg-[#1A1F2A] border border-zinc-800 rounded-md shadow-lg z-10">
           {options.map((opt) => (
             <button
               key={opt}
@@ -387,8 +387,8 @@ function FilterDropdown({ label, options, selected, setSelected }) {
                 setIsOpen(false)
               }}
               className={cn(
-                "block w-full text-left px-4 py-2 text-sm hover:bg-gray-700",
-                selected === opt && "bg-gray-700 font-medium"
+                "block w-full text-left px-4 py-2 text-sm hover:bg-zinc-700",
+                selected === opt && "bg-zinc-700 font-medium"
               )}
             >
               {opt}
@@ -404,7 +404,7 @@ function FilterDropdown({ label, options, selected, setSelected }) {
 function TierRow({ tier, color, champions }) {
   const [collapsed, setCollapsed] = useState(false)
   return (
-    <div className="border border-gray-800 rounded-md overflow-hidden">
+    <div className="border border-zinc-800 rounded-md overflow-hidden">
       <div
         className="flex items-center bg-[#1A1F2A] px-4 py-2 cursor-pointer"
         onClick={() => setCollapsed(!collapsed)}
@@ -419,7 +419,7 @@ function TierRow({ tier, color, champions }) {
           <span>
             {champions.length} Champion{champions.length !== 1 && "s"}
           </span>
-          <span className="text-gray-400">
+          <span className="text-zinc-400">
             {tier === "S"
               ? "Overpowered"
               : tier === "A"
@@ -473,14 +473,14 @@ function SearchBar({ placeholder, value, onChange, className = "" }) {
   return (
     <div className={cn("relative", className)}>
       <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-        <Search size={16} className="text-gray-400" />
+        <Search size={16} className="text-zinc-400" />
       </div>
       <input
         type="text"
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="w-full pl-10 pr-3 py-2 bg-[#1A1F2A] border border-gray-800 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-700"
+        className="w-full pl-10 pr-3 py-2 bg-[#1A1F2A] border border-zinc-800 rounded-md focus:outline-none focus:ring-1 focus:ring-zinc-700"
       />
     </div>
   )
