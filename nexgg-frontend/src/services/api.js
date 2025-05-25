@@ -43,3 +43,9 @@ export const getDynamicStats = async () => {
   const res = await api.get('/dynamic_stats');
   return res.data; // [{ champion_id, win_rate, pick_rate, ban_rate, ... }, …]
 };
+
+// llama a GET /api/champions/:id
+export const getChampionById = async (id) => {
+  const res = await api.get(`/champions/${id}`);
+  return res.data;
+};

@@ -36,7 +36,7 @@ function App() {
 
         {/* Champions y builds */}
         <Route path="/champions" element={<Champions />} />
-        <Route path="/champions/:championId"      element={<ChampProfile />} />
+        <Route path="/champions/:championId" element={<ChampProfile />} />
 
         {/* Otras secciones */}
         <Route path="/tierlist" element={<Tierlist />} />
