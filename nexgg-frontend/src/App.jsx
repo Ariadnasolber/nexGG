@@ -10,6 +10,15 @@ import Builds from './pages/Builds';
 import ChampProfile from './pages/ChampProfile';
 import UserProfile from './pages/UserProfile';
 import Dashboard from './pages/Dashboard';
+
+// Páginas individuales de juegos
+import LeagueOfLegends from './pages/LeagueOfLegends';
+import ValorantComingSoon from './pages/ValorantComingSoon';
+import ApexLegends from './pages/ApexLegends';
+import Overwatch from './pages/Overwatch';
+import CounterStrike from './pages/CounterStrike';
+import MarvelRivals from './pages/MarvelRivals';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,20 +28,27 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        {/* Home */}
+        {/* Rutas generales */}
         <Route path="/" element={<Header />} />
-        {/* Auth y user */}
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/profile" element={<UserProfile />} />
+        <Route path="/perfil" element={<UserProfile />} />
 
-        {/* Champions list y profile */}
+        {/* Champions y builds */}
         <Route path="/champions" element={<Champions />} />
         <Route path="/champions/:championId"      element={<ChampProfile />} />
 
         {/* Otras secciones */}
         <Route path="/tierlist" element={<Tierlist />} />
         <Route path="/overlay" element={<Builds />} />
+
+        {/* Rutas de juegos */}
+        <Route path="/lol" element={<LeagueOfLegends />} />
+        <Route path="/valorant" element={<ValorantComingSoon />} />
+        <Route path="/apex" element={<ApexLegends />} />
+        <Route path="/overwatch" element={<Overwatch />} />
+        <Route path="/cs" element={<CounterStrike />} />
+        <Route path="/marvel" element={<MarvelRivals />} />
       </Routes>
       <Footer />
     </Router>

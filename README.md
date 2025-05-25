@@ -1,14 +1,53 @@
-# React + Vite
+# nex.gg
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plataforma web interactiva inspirada en Blitz.gg, desarrollada con **Next.js 15**, **React 19** y **Tailwind CSS 4**, que permite consultar información detallada sobre campeones, builds, estadísticas y sinergias del videojuego *League of Legends*.
 
-Currently, two official plugins are available:
+## 🧠 Objetivo del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El objetivo principal de **nex.gg** es ofrecer a los jugadores una herramienta visualmente atractiva y funcional para mejorar su experiencia en el juego, proporcionando datos actualizados sobre campeones, habilidades, objetos, roles y builds personalizadas.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# NEXGG
-# NEXGG
+- **Next.js 15**
+- **React 19**
+- **Tailwind CSS 4**
+- **TypeScript**
+- **Framer Motion**
+- **Riot Games API (Data Dragon)**
+- **Redux Toolkit (para gestión global de estado)**
+- **Vercel (despliegue en producción)**
+
+## 🧩 Funcionalidades principales
+
+- 🔍 Página de campeones con búsqueda, filtros y tarjetas animadas.
+- 📊 Sección de builds optimizadas y estadísticas por rol.
+- 🧠 Sinergias y counters por campeón.
+- 📱 Diseño responsive adaptado a móvil, tablet y escritorio.
+- 🔐 Autenticación básica (modo local, sin backend).
+- 🌑 Interfaz moderna, oscura y accesible.
+
+
+## 🖼️ Vistas implementadas
+
+- **Home** – Introducción con presentación visual del proyecto.
+- **Login** – Pantalla de autenticación.
+- **Dashboard** – Vista exclusiva para administradores.
+- **Champions** – Página con todos los campeones y sus filtros.
+- **ChampProfile** – Detalle completo de cada campeón: estadísticas, habilidades, builds y sinergias.
+- **TierListPage** – Clasificación por popularidad y rendimiento.
+
+## 🧪 Tests
+
+El proyecto incluye pruebas automatizadas:
+
+- ✔️ Unitarias: Componentes de formulario y producto.
+- 🔁 Integración: Métodos del servicio de productos.
+- 🧪 End-to-End: Formulario de productos y login (Cypress).
+
+## 🛠️ Instalación local
+
+```bash
+git clone https://github.com/ariadna/nex.gg.git
+cd nex.gg
+npm install
+npm run dev
