@@ -1,4 +1,3 @@
-// importChampions.js
 require("dotenv").config();
 const fs = require("fs");
 const axios = require("axios");
@@ -9,7 +8,7 @@ const SERVICE_ROLE_KEY = process.env.SERVICE_ROLE_KEY;
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
 async function importChampions() {
-    // 1) Coge la última versión publicada
+    //busca la última versión de los assets
     const versionsRes = await axios.get(
         "https://ddragon.leagueoflegends.com/api/versions.json"
     );
@@ -17,17 +16,16 @@ async function importChampions() {
     const LANG = "en_US";
     const BASE_URL = `https://ddragon.leagueoflegends.com/cdn/${VERSION}/data/${LANG}`;
 
-    // 2) Descarga la lista de campeones
+    // lo descarga
     const listRes = await axios.get(`${BASE_URL}/champion.json`);
     const keys = Object.keys(listRes.data.data);
 
     const champions = [];
-    // 3) Procesa cada campeón
+    // crea un array de objetos con la info
     for (const key of keys) {
         const champRes = await axios.get(`${BASE_URL}/champion/${key}.json`);
         const champ = champRes.data.data[key];
 
-        // Monta el objeto igual que tenías antes…
         champions.push({
             id: champ.id,
             name: champ.name,
@@ -66,7 +64,7 @@ async function importChampions() {
         });
     }
 
-    // 4) Inserta (o actualiza) en Supabase y selecciona el resultado
+    // inserta o actualiza los campeones en la base de datos
     const { data, error } = await supabase
         .from("champions")
         .upsert(champions, { onConflict: ["id"] })

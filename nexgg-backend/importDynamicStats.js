@@ -1,22 +1,21 @@
-// importDynamicStats.js
 require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 const { createClient } = require("@supabase/supabase-js");
 
-// Inicializa Supabase con tu Service Role Key
+// inicializa Supabase con service Role Key
 const supabase = createClient(
     process.env.SUPABASE_URL,
     process.env.SERVICE_ROLE_KEY
 );
 
 async function importStats() {
-    // 1) Lee el JSON local
+    // lee el json local de dynamic_stats_data.json
     const file = path.join(__dirname, "dynamic_stats_data.json");
     const raw = fs.readFileSync(file, "utf-8");
     const dynamic = JSON.parse(raw);
 
-    // 2) Prepara las filas para upsert
+    // prepara los datos para el upsert
     const rows = dynamic.map((item) => ({
         champion_id: item.id,
         win_rate: item.winRate,
@@ -26,7 +25,7 @@ async function importStats() {
     }));
     
 
-    // 3) Upsert en la tabla dynamic_stats
+    // hace el upsert en la tabla dynamic_stats
     const { data, error } = await supabase
         .from("dynamic_stats")
         .upsert(rows, { onConflict: ["champion_id"] })

@@ -9,7 +9,7 @@
         "gender": "Male",
         "resource": "Blood Well",
         "range_type": "Melee",
-        "tags": ["Fighter"],
+        "role": ["Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Aatrox.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
         "abilities": {
@@ -74,7 +74,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Assassin"],
+        "role": ["Mage", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ahri.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
         "abilities": {
@@ -139,7 +139,7 @@
         "gender": "Female",
         "resource": "Energy",
         "range_type": "Melee",
-        "tags": ["Assassin"],
+        "role": ["Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Akali.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
         "abilities": {
@@ -204,7 +204,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Akshan.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_0.jpg",
         "abilities": {
@@ -269,7 +269,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Alistar.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
         "abilities": {
@@ -334,7 +334,7 @@
         "gender": "Female",
         "resource": "Energy",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ambessa.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ambessa_0.jpg",
         "abilities": {
@@ -399,7 +399,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Amumu.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
         "abilities": {
@@ -464,7 +464,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Anivia.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
         "abilities": {
@@ -529,7 +529,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Annie.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
         "abilities": {
@@ -594,7 +594,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Aphelios.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
         "abilities": {
@@ -659,7 +659,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Support"],
+        "role": ["Marksman", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ashe.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
         "abilities": {
@@ -724,7 +724,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/AurelionSol.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
         "abilities": {
@@ -789,7 +789,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Assassin"],
+        "role": ["Mage", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Aurora.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aurora_0.jpg",
         "abilities": {
@@ -854,7 +854,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Marksman"],
+        "role": ["Mage", "Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Azir.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
         "abilities": {
@@ -919,7 +919,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Bard.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
         "abilities": {
@@ -984,7 +984,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter"],
+        "role": ["Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Belveth.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg",
         "abilities": {
@@ -1049,7 +1049,7 @@
         "gender": "Other",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Blitzcrank.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
         "abilities": {
@@ -1114,7 +1114,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Brand.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
         "abilities": {
@@ -1179,7 +1179,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Braum.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
         "abilities": {
@@ -1244,7 +1244,7 @@
         "gender": "Female",
         "resource": "Fury",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Briar.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_0.jpg",
         "abilities": {
@@ -1309,7 +1309,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Caitlyn.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
         "abilities": {
@@ -1374,7 +1374,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Camille.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
         "abilities": {
@@ -1439,7 +1439,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Cassiopeia.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
         "abilities": {
@@ -1504,7 +1504,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Mage"],
+        "role": ["Tank", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Chogath.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
         "abilities": {
@@ -1569,7 +1569,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Corki.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
         "abilities": {
@@ -1634,7 +1634,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Darius.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
         "abilities": {
@@ -1699,7 +1699,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Diana.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg",
         "abilities": {
@@ -1764,7 +1764,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Draven.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg",
         "abilities": {
@@ -1829,7 +1829,7 @@
         "gender": "Male",
         "resource": "None",
         "range_type": "Melee",
-        "tags": ["Tank", "Fighter"],
+        "role": ["Tank", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/DrMundo.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
         "abilities": {
@@ -1894,7 +1894,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ekko.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg",
         "abilities": {
@@ -1959,7 +1959,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged/Melee",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Elise.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
         "abilities": {
@@ -2024,7 +2024,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Evelynn.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
         "abilities": {
@@ -2089,7 +2089,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ezreal.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
         "abilities": {
@@ -2154,7 +2154,7 @@
         "gender": "Other",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Fiddlesticks.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg",
         "abilities": {
@@ -2219,7 +2219,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Fiora.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
         "abilities": {
@@ -2284,7 +2284,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin", "Fighter"],
+        "role": ["Assassin", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Fizz.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
         "abilities": {
@@ -2349,7 +2349,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Mage"],
+        "role": ["Tank", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Galio.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
         "abilities": {
@@ -2414,7 +2414,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter"],
+        "role": ["Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gangplank.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
         "abilities": {
@@ -2479,7 +2479,7 @@
         "gender": "Male",
         "resource": "None",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Garen.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
         "abilities": {
@@ -2544,7 +2544,7 @@
         "gender": "Male",
         "resource": "Rage",
         "range_type": "Ranged/Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gnar.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
         "abilities": {
@@ -2609,7 +2609,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Mage"],
+        "role": ["Fighter", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gragas.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
         "abilities": {
@@ -2674,7 +2674,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Graves.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg",
         "abilities": {
@@ -2739,7 +2739,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter"],
+        "role": ["Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gwen.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg",
         "abilities": {
@@ -2804,7 +2804,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Hecarim.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
         "abilities": {
@@ -2869,7 +2869,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Heimerdinger.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
         "abilities": {
@@ -2934,7 +2934,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Hwei.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hwei_0.jpg",
         "abilities": {
@@ -2999,7 +2999,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Illaoi.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
         "abilities": {
@@ -3064,7 +3064,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Irelia.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
         "abilities": {
@@ -3129,7 +3129,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ivern.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
         "abilities": {
@@ -3194,7 +3194,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Janna.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
         "abilities": {
@@ -3259,7 +3259,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/JarvanIV.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
         "abilities": {
@@ -3324,7 +3324,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter"],
+        "role": ["Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jax.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
         "abilities": {
@@ -3389,7 +3389,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee/Ranged",
-        "tags": ["Marksman", "Fighter"],
+        "role": ["Marksman", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jayce.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
         "abilities": {
@@ -3454,7 +3454,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jhin.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
         "abilities": {
@@ -3519,7 +3519,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jinx.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
         "abilities": {
@@ -3584,7 +3584,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kaisa.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg",
         "abilities": {
@@ -3649,7 +3649,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kalista.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
         "abilities": {
@@ -3714,7 +3714,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Karma.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
         "abilities": {
@@ -3779,7 +3779,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Karthus.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
         "abilities": {
@@ -3844,7 +3844,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kassadin.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
         "abilities": {
@@ -3909,7 +3909,7 @@
         "gender": "Female",
         "resource": "None",
         "range_type": "Melee",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Katarina.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
         "abilities": {
@@ -3974,7 +3974,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee/Ranged",
-        "tags": ["Mage", "Marksman"],
+        "role": ["Mage", "Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kayle.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
         "abilities": {
@@ -4039,7 +4039,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kayn.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
         "abilities": {
@@ -4104,7 +4104,7 @@
         "gender": "Male",
         "resource": "Energy",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kennen.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
         "abilities": {
@@ -4169,7 +4169,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin"],
+        "role": ["Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Khazix.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
         "abilities": {
@@ -4234,7 +4234,7 @@
         "gender": "Other",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kindred.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
         "abilities": {
@@ -4299,7 +4299,7 @@
         "gender": "Male",
         "resource": "Courage",
         "range_type": "Melee",
-        "tags": ["Fighter"],
+        "role": ["Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kled.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
         "abilities": {
@@ -4364,7 +4364,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/KogMaw.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
         "abilities": {
@@ -4429,7 +4429,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Fighter"],
+        "role": ["Tank", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/KSante.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg",
         "abilities": {
@@ -4494,7 +4494,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Leblanc.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
         "abilities": {
@@ -4559,7 +4559,7 @@
         "gender": "Male",
         "resource": "Energy",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/LeeSin.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
         "abilities": {
@@ -4624,7 +4624,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Leona.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
         "abilities": {
@@ -4689,7 +4689,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Mage"],
+        "role": ["Fighter", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lillia.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg",
         "abilities": {
@@ -4754,7 +4754,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lissandra.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg",
         "abilities": {
@@ -4819,7 +4819,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lucian.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg",
         "abilities": {
@@ -4884,7 +4884,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lulu.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg",
         "abilities": {
@@ -4949,7 +4949,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lux.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
         "abilities": {
@@ -5014,7 +5014,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Mage"],
+        "role": ["Tank", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Malphite.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg",
         "abilities": {
@@ -5079,7 +5079,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Malzahar.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
         "abilities": {
@@ -5144,7 +5144,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Maokai.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
         "abilities": {
@@ -5209,7 +5209,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin", "Fighter"],
+        "role": ["Assassin", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/MasterYi.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg",
         "abilities": {
@@ -5274,7 +5274,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Mel.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_0.jpg",
         "abilities": {
@@ -5339,7 +5339,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Milio.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg",
         "abilities": {
@@ -5404,7 +5404,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/MissFortune.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg",
         "abilities": {
@@ -5469,7 +5469,7 @@
         "gender": "Male",
         "resource": "Shield",
         "range_type": "Melee",
-        "tags": ["Fighter", "Mage"],
+        "role": ["Fighter", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Mordekaiser.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg",
         "abilities": {
@@ -5534,7 +5534,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Morgana.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg",
         "abilities": {
@@ -5599,7 +5599,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin", "Fighter"],
+        "role": ["Assassin", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Naafiri.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_0.jpg",
         "abilities": {
@@ -5664,7 +5664,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nami.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg",
         "abilities": {
@@ -5729,7 +5729,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nasus.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
         "abilities": {
@@ -5794,7 +5794,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nautilus.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg",
         "abilities": {
@@ -5859,7 +5859,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Neeko.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg",
         "abilities": {
@@ -5924,7 +5924,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged/Melee",
-        "tags": ["Assassin", "Mage"],
+        "role": ["Assassin", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nidalee.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg",
         "abilities": {
@@ -5989,7 +5989,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nilah.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg",
         "abilities": {
@@ -6054,7 +6054,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nocturne.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg",
         "abilities": {
@@ -6119,7 +6119,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Mage"],
+        "role": ["Tank", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nunu.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg",
         "abilities": {
@@ -6184,7 +6184,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Olaf.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg",
         "abilities": {
@@ -6249,7 +6249,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Orianna.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
         "abilities": {
@@ -6314,7 +6314,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank"],
+        "role": ["Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ornn.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg",
         "abilities": {
@@ -6379,7 +6379,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Pantheon.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg",
         "abilities": {
@@ -6444,7 +6444,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Fighter"],
+        "role": ["Tank", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Poppy.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg",
         "abilities": {
@@ -6509,7 +6509,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Support", "Assassin"],
+        "role": ["Support", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Pyke.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg",
         "abilities": {
@@ -6574,7 +6574,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin"],
+        "role": ["Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Qiyana.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg",
         "abilities": {
@@ -6639,7 +6639,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Quinn.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg",
         "abilities": {
@@ -6704,7 +6704,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support"],
+        "role": ["Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rakan.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg",
         "abilities": {
@@ -6769,7 +6769,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank"],
+        "role": ["Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rammus.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg",
         "abilities": {
@@ -6834,7 +6834,7 @@
         "gender": "Female",
         "resource": "Rage",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/RekSai.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg",
         "abilities": {
@@ -6899,7 +6899,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rell.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg",
         "abilities": {
@@ -6964,7 +6964,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Renata.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg",
         "abilities": {
@@ -7029,7 +7029,7 @@
         "gender": "Male",
         "resource": "Fury",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Renekton.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg",
         "abilities": {
@@ -7094,7 +7094,7 @@
         "gender": "Male",
         "resource": "Ferocity",
         "range_type": "Melee",
-        "tags": ["Assassin", "Fighter"],
+        "role": ["Assassin", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rengar.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg",
         "abilities": {
@@ -7159,7 +7159,7 @@
         "gender": "Female",
         "resource": "None",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Riven.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
         "abilities": {
@@ -7224,7 +7224,7 @@
         "gender": "Male",
         "resource": "Heat",
         "range_type": "Melee",
-        "tags": ["Fighter", "Mage"],
+        "role": ["Fighter", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rumble.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg",
         "abilities": {
@@ -7289,7 +7289,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ryze.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
         "abilities": {
@@ -7354,7 +7354,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Samira.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg",
         "abilities": {
@@ -7419,7 +7419,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank"],
+        "role": ["Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sejuani.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg",
         "abilities": {
@@ -7484,7 +7484,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Marksman"],
+        "role": ["Support", "Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Senna.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg",
         "abilities": {
@@ -7549,7 +7549,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Seraphine.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg",
         "abilities": {
@@ -7614,7 +7614,7 @@
         "gender": "Male",
         "resource": "Grit",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sett.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
         "abilities": {
@@ -7679,7 +7679,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin"],
+        "role": ["Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Shaco.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
         "abilities": {
@@ -7744,7 +7744,7 @@
         "gender": "Male",
         "resource": "Energy",
         "range_type": "Melee",
-        "tags": ["Tank"],
+        "role": ["Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Shen.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg",
         "abilities": {
@@ -7809,7 +7809,7 @@
         "gender": "Female",
         "resource": "Fury",
         "range_type": "Melee",
-        "tags": ["Fighter", "Mage"],
+        "role": ["Fighter", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Shyvana.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg",
         "abilities": {
@@ -7874,7 +7874,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Mage"],
+        "role": ["Tank", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Singed.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
         "abilities": {
@@ -7939,7 +7939,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Fighter"],
+        "role": ["Tank", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sion.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg",
         "abilities": {
@@ -8004,7 +8004,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sivir.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg",
         "abilities": {
@@ -8069,7 +8069,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Fighter"],
+        "role": ["Tank", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Skarner.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg",
         "abilities": {
@@ -8134,7 +8134,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Smolder.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Smolder_0.jpg",
         "abilities": {
@@ -8199,7 +8199,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sona.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg",
         "abilities": {
@@ -8264,7 +8264,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Soraka.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg",
         "abilities": {
@@ -8329,7 +8329,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Swain.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg",
         "abilities": {
@@ -8394,7 +8394,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Mage", "Assassin"],
+        "role": ["Mage", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sylas.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
         "abilities": {
@@ -8459,7 +8459,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Syndra.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg",
         "abilities": {
@@ -8524,7 +8524,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Tank", "Support"],
+        "role": ["Tank", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/TahmKench.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
         "abilities": {
@@ -8589,7 +8589,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Taliyah.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg",
         "abilities": {
@@ -8654,7 +8654,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Assassin"],
+        "role": ["Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Talon.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg",
         "abilities": {
@@ -8719,7 +8719,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Support", "Tank"],
+        "role": ["Support", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Taric.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg",
         "abilities": {
@@ -8784,7 +8784,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Teemo.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg",
         "abilities": {
@@ -8849,7 +8849,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Tank"],
+        "role": ["Support", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Thresh.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
         "abilities": {
@@ -8914,7 +8914,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Tristana.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg",
         "abilities": {
@@ -8979,7 +8979,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Trundle.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg",
         "abilities": {
@@ -9044,7 +9044,7 @@
         "gender": "Male",
         "resource": "Fury",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Tryndamere.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg",
         "abilities": {
@@ -9109,7 +9109,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Marksman"],
+        "role": ["Mage", "Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/TwistedFate.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg",
         "abilities": {
@@ -9174,7 +9174,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Twitch.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg",
         "abilities": {
@@ -9239,7 +9239,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Udyr.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg",
         "abilities": {
@@ -9304,7 +9304,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Urgot.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
         "abilities": {
@@ -9369,7 +9369,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Mage"],
+        "role": ["Marksman", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Varus.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg",
         "abilities": {
@@ -9434,7 +9434,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman", "Assassin"],
+        "role": ["Marksman", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vayne.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg",
         "abilities": {
@@ -9499,7 +9499,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Veigar.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg",
         "abilities": {
@@ -9564,7 +9564,7 @@
         "gender": "Other",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Velkoz.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg",
         "abilities": {
@@ -9629,7 +9629,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vex.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg",
         "abilities": {
@@ -9694,7 +9694,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vi.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg",
         "abilities": {
@@ -9759,7 +9759,7 @@
         "gender": "Male",
         "resource": "None",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Viego.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg",
         "abilities": {
@@ -9824,7 +9824,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Viktor.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg",
         "abilities": {
@@ -9889,7 +9889,7 @@
         "gender": "Male",
         "resource": "Crimson Rush",
         "range_type": "Ranged",
-        "tags": ["Mage", "Fighter"],
+        "role": ["Mage", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vladimir.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg",
         "abilities": {
@@ -9954,7 +9954,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Volibear.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
         "abilities": {
@@ -10019,7 +10019,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Warwick.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg",
         "abilities": {
@@ -10084,7 +10084,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/MonkeyKing.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
         "abilities": {
@@ -10149,7 +10149,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Xayah.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg",
         "abilities": {
@@ -10214,7 +10214,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Xerath.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
         "abilities": {
@@ -10279,7 +10279,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/XinZhao.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg",
         "abilities": {
@@ -10344,7 +10344,7 @@
         "gender": "Male",
         "resource": "Flow",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yasuo.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg",
         "abilities": {
@@ -10409,7 +10409,7 @@
         "gender": "Male",
         "resource": "Flow",
         "range_type": "Melee",
-        "tags": ["Fighter", "Assassin"],
+        "role": ["Fighter", "Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yone.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg",
         "abilities": {
@@ -10474,7 +10474,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Melee",
-        "tags": ["Fighter", "Tank"],
+        "role": ["Fighter", "Tank"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yorick.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg",
         "abilities": {
@@ -10539,7 +10539,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yuumi.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg",
         "abilities": {
@@ -10604,7 +10604,7 @@
         "gender": "Male",
         "resource": "None",
         "range_type": "Melee",
-        "tags": ["Tank", "Fighter"],
+        "role": ["Tank", "Fighter"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zac.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg",
         "abilities": {
@@ -10669,7 +10669,7 @@
         "gender": "Male",
         "resource": "Energy",
         "range_type": "Melee",
-        "tags": ["Assassin"],
+        "role": ["Assassin"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zed.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg",
         "abilities": {
@@ -10734,7 +10734,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Marksman"],
+        "role": ["Marksman"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zeri.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg",
         "abilities": {
@@ -10799,7 +10799,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ziggs.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg",
         "abilities": {
@@ -10864,7 +10864,7 @@
         "gender": "Male",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Support", "Mage"],
+        "role": ["Support", "Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zilean.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg",
         "abilities": {
@@ -10929,7 +10929,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage"],
+        "role": ["Mage"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zoe.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg",
         "abilities": {
@@ -10994,7 +10994,7 @@
         "gender": "Female",
         "resource": "Mana",
         "range_type": "Ranged",
-        "tags": ["Mage", "Support"],
+        "role": ["Mage", "Support"],
         "icon_url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zyra.png",
         "splash_url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
         "abilities": {

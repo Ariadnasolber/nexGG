@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-
-// Importación de componentes
 import HeaderSection from "../components/ChampProfile/HeaderSection";
 import TabNavigation from "../components/ChampProfile/TabNavigation";
 import BuildTab from "../components/ChampProfile/BuildTab";
 import AramTab from "../components/ChampProfile/AramTab";
-import SynergiesTab from "../components/ChampProfile/SynergiesTab";
 import AbilitiesTab from "../components/ChampProfile/AbilitiesTab";
 
-// Datos simulados de campeón
+// importación de datos simulados
 import championData from "../data/ChampionData";
 
 const ChampProfile = () => {
@@ -49,7 +46,6 @@ const ChampProfile = () => {
             <div className="bg-[#1c1c21] rounded-lg p-5">
                 {activeTab === "build" && <BuildTab build={champion.builds.standard} />}
                 {activeTab === "aram" && <AramTab build={champion.builds.aram} />}
-                {activeTab === "synergies" && <SynergiesTab synergies={champion.synergies} />}
                 {activeTab === "abilities" && (
                     <AbilitiesTab
                         abilities={champion.abilities}

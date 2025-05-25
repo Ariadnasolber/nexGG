@@ -37,3 +37,9 @@ export const createBuild = async (build) => {
   const res = await api.post('/builds', build);
   return res.data;
 };
+
+// extraer stats dinamicas
+export const getDynamicStats = async () => {
+  const res = await api.get('/dynamic_stats');
+  return res.data; // [{ champion_id, win_rate, pick_rate, ban_rate, ... }, …]
+};

@@ -1,5 +1,3 @@
-// getChampions.js
-
 const fs = require("fs");
 const axios = require("axios");
 
@@ -8,17 +6,16 @@ const LANG = "en_US";
 const BASE_URL = `https://ddragon.leagueoflegends.com/cdn/${VERSION}/data/${LANG}`;
 
 async function getChampions() {
-    // 1) Descarga la lista de campeones
+    // obtiene la lista de campeones
     const response = await axios.get(`${BASE_URL}/champion.json`);
     const champions = response.data.data;
     const result = [];
 
-    // 2) Para cada campeón, traer detalle
+    // itera sobre cada campeón y obtiene sus detalles
     for (const key of Object.keys(champions)) {
         const res = await axios.get(`${BASE_URL}/champion/${key}.json`);
         const champ = res.data.data[key];
 
-        // Abilities en JSON
         const abilities = {
             passive: {
                 name: champ.passive.name,
@@ -47,7 +44,7 @@ async function getChampions() {
             },
         };
 
-        // Estructura final
+        // crea el objeto del campeón
         result.push({
             id: champ.id,
             name: champ.name,
@@ -68,10 +65,10 @@ async function getChampions() {
         });
     }
 
-    // 3) Guárdalo en JSON
+    // lo guarda en el JSON
     fs.writeFileSync("champions_data.json", JSON.stringify(result, null, 2));
     console.log("✅ Campeones guardados en champions_data.json");
 }
 
-// Sólo esta llamada al final
+
 getChampions();

@@ -29,7 +29,7 @@ const Navbar = () => {
                         <img className="h-5 pr-8 hover:scale-105" src="/NEXGGLOGO.png" alt="" />
                     </Link>
                     <Link to="/" className="hover:underline underline-offset-3 text-grey-100 text-sm font-thin">Home</Link>
-                    <Link to="/champions" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">All Champion</Link>
+                    <Link to="/champions" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Champions</Link>
                     <Link to="/tierlist" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Tier List</Link>
                     <Link to="/overlay" className="hover:underline underline-offset-3 text-sm font-thin text-grey-100">Builds</Link>
                 </div>

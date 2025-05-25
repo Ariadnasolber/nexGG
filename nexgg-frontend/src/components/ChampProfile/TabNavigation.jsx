@@ -1,6 +1,6 @@
 import React from "react";
 
-const tabs = ["build", "aram", "synergies", "abilities"];
+const tabs = ["build", "aram", "abilities"];
 
 const TabNavigation = ({ activeTab, setActiveTab }) => {
     return (

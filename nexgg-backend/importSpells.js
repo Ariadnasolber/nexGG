@@ -1,4 +1,3 @@
-// importSpells.js
 require("dotenv").config();
 const fs = require("fs");
 const { createClient } = require("@supabase/supabase-js");
