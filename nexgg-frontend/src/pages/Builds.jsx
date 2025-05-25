@@ -540,7 +540,15 @@ export default function Builds() {
         </div>
       </div>
       {/* Header */}
-     
+      <header className="bg-[#0F1923] border-b border-[#1F2731] py-4">
+        <div className="max-w-[1200px] mx-auto px-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Gamepad2 className="h-6 w-6 text-[#FF4655]" />
+
+          </div>
+
+        </div>
+      </header>
 
       <div className="max-w-[1200px] mx-auto px-4 py-8">
         {/* Stats Banner */}
