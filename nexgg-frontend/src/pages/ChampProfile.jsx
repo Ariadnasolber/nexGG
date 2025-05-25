@@ -1,11 +1,12 @@
+// src/pages/ChampProfile.jsx
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getChampionById } from "../services/api";
 
 import HeaderSection from "../components/ChampProfile/HeaderSection";
 import TabNavigation from "../components/ChampProfile/TabNavigation";
-import BuildTab from "../components/ChampProfile/BuildTab";
-import AramTab from "../components/ChampProfile/AramTab";
+// import BuildTab from "../components/ChampProfile/BuildTab";
+// import AramTab from "../components/ChampProfile/AramTab";
 import AbilitiesTab from "../components/ChampProfile/AbilitiesTab";
 
 const ChampProfile = () => {
@@ -13,28 +14,22 @@ const ChampProfile = () => {
 
     const [champion, setChampion] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [activeTab, setActiveTab] = useState("build");
+    const [activeTab, setActiveTab] = useState("abilities");
     const [activeAbility, setActiveAbility] = useState("passive");
 
     useEffect(() => {
         setLoading(true);
         getChampionById(championId)
             .then((data) => {
-                // Normalizamos los campos para los componentes
                 const champ = {
                     ...data,
-                    // HeaderSection espera champ.roles (array de strings)
                     roles: data.role || [],
-
-                    // HeaderSection espera un objeto stats con winRate, pickRate, banRate y matches
                     stats: {
                         winRate: data.win_rate != null ? data.win_rate.toFixed(1) : 0,
                         pickRate: data.pick_rate != null ? data.pick_rate.toFixed(1) : 0,
                         banRate: data.ban_rate != null ? data.ban_rate.toFixed(1) : 0,
                         matches: data.stats?.matches || 0,
                     },
-
-                    // Por ahora dejamos los builds vacíos; más adelante los cargaremos con getBuilds()
                     builds: {
                         standard: {
                             winRate: 0,
@@ -44,19 +39,10 @@ const ChampProfile = () => {
                             summonerSpells: [],
                             skillOrder: [],
                         },
-                        aram: {
-                            winRate: 0,
-                            pickRate: 0,
-                            items: [],
-                            runes: { primary: [], secondary: [], statMods: [] },
-                            summonerSpells: [],
-                        },
+                        aram: {},
                     },
-
-                    // Abilities vienen en JSONB; si aún no las tienes en la API, lo dejamos vacío
                     abilities: data.abilities || {},
                 };
-
                 setChampion(champ);
             })
             .catch((err) => {
@@ -97,12 +83,41 @@ const ChampProfile = () => {
             />
 
             <div className="bg-[#1c1c21] rounded-lg p-5">
+                {/*BUILD TAB*/}
                 {activeTab === "build" && (
-                    <BuildTab {...champion.builds.standard} />
+                    <>
+                        {/* Banner placeholder */}
+                        <div className="flex items-center justify-center h-40 bg-[#282A2F] rounded-md mb-6">
+                            <p className="text-center text-[#D9D9D9] text-lg font-semibold">
+                                🚧 We are working on it! 🚧<br />
+                                Coming soon: build recommendations and stats.
+                            </p>
+                        </div>
+
+                        {/*
+            <BuildTab build={champion.builds.standard} />
+            */}
+                    </>
                 )}
+
+                {/*ARAM TAB*/}
                 {activeTab === "aram" && (
-                    <AramTab {...champion.builds.aram} />
+                    <>
+                        {/* Banner placeholder */}
+                        <div className="flex items-center justify-center h-40 bg-[#282A2F] rounded-md mb-6">
+                            <p className="text-center text-[#D9D9D9] text-lg font-semibold">
+                                🚧 ¡We are working on it! 🚧<br />
+                                Coming soon: ARAM builds and stats.
+                            </p>
+                        </div>
+
+                        {/*
+            <AramTab build={champion.builds.aram} />
+            */}
+                    </>
                 )}
+
+                {/*ABILITIES TAB*/}
                 {activeTab === "abilities" && (
                     <AbilitiesTab
                         abilities={champion.abilities}
